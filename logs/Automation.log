@@ -1,0 +1,161 @@
+14:26:48.318 [main] INFO  stepDefinitions.Hooks - ******************* Test Suit Started **********************
+14:26:49.272 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+14:26:49.273 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 1 Verify if place being succesfully added using AddPlaceAPI 
+----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 1 Verify if place being succesfully added using AddPlaceAPI
+14:26:50.758 [main] INFO  utilities.BaseClass -     "lat": {$latitude},
+14:26:50.758 [main] INFO  utilities.BaseClass -     "lng": {$longitude}
+14:26:50.758 [main] INFO  utilities.BaseClass -   "name": "{$name}",
+14:26:50.758 [main] INFO  utilities.BaseClass -   "address": "{$address}",
+14:26:50.759 [main] INFO  utilities.BaseClass -     "{$side layout}"
+14:26:50.759 [main] INFO  utilities.BaseClass -   "language": "{$language}"
+14:26:50.940 [main] INFO  utilities.BaseClass - Rest Request: {
+  "location": {
+    "lat": -31.388192,
+    "lng": 37.589062
+  },
+  "accuracy": 50,
+  "name": "atest",
+  "phone_number": "(+91) 983 893 3937",
+  "address": "Marathahalli, Bangalore",
+  "types": [
+    "shoe park",
+    "shop"
+  ],
+  "website": "http://google.com",
+  "language": "India-IND"
+}
+
+14:26:50.950 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/add/json
+14:26:53.386 [main] INFO  utilities.BaseClass - Response code: 200
+14:26:53.647 [main] INFO  stepDefinitions.CommonSteps - Response: {
+    "status": "OK",
+    "place_id": "40b070c7a352f89e508f62b10733e53a",
+    "scope": "APP",
+    "reference": "af972d909ee3af079045182a071ba90baf972d909ee3af079045182a071ba90b",
+    "id": "af972d909ee3af079045182a071ba90b"
+}
+14:26:54.957 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 1 Verify if place being succesfully added using AddPlaceAPI 
+----------------------------------------------------------------------
+14:26:54.957 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+14:26:54.999 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:6, Result:PASSED, Feature:features/GoogleAPI/placeValidations.feature, StartTime:2024-05-26T14:26:48.865+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+14:26:55.153 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+14:26:55.153 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 2 Verify if place details fecthing succesfully by GetPlaceAPI 
+----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 2 Verify if place details fecthing succesfully by GetPlaceAPI
+14:26:55.238 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/get/json
+14:26:56.133 [main] INFO  utilities.BaseClass - Response code: 200
+14:26:56.143 [main] INFO  stepDefinitions.CommonSteps - Response: {
+    "location": {
+        "latitude": "-31.388192",
+        "longitude": "37.589062"
+    },
+    "accuracy": "50",
+    "name": "atest",
+    "phone_number": "(+91) 983 893 3937",
+    "address": "Marathahalli, Bangalore",
+    "types": "shoe park,shop",
+    "website": "http://google.com",
+    "language": "India-IND"
+}
+14:26:56.200 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 2 Verify if place details fecthing succesfully by GetPlaceAPI 
+----------------------------------------------------------------------
+14:26:56.201 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+14:26:56.201 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:1, Result:PASSED, Feature:features/GoogleAPI/placeValidations.feature, StartTime:2024-05-26T14:26:55.092+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+14:26:56.253 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+14:26:56.253 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 3 Verify if place details fecthing succesfully by UpdatePlaceAPI 
+----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 3 Verify if place details fecthing succesfully by UpdatePlaceAPI
+14:26:56.285 [main] INFO  utilities.BaseClass - "place_id":"{$place_id}",
+14:26:56.285 [main] INFO  utilities.BaseClass - "address":"{$address}",
+14:26:56.285 [main] INFO  utilities.BaseClass - "key":"{$key}"
+14:26:56.292 [main] INFO  utilities.BaseClass - Rest Request: {
+"place_id":"40b070c7a352f89e508f62b10733e53a",
+"address":"HSR Layout",
+"key":"qaclick123"
+}
+
+14:26:56.299 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/update/json
+14:26:57.363 [main] INFO  utilities.BaseClass - Response code: 200
+14:26:57.370 [main] INFO  stepDefinitions.CommonSteps - Response: {
+    "msg": "Address successfully updated"
+}
+14:26:57.390 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 3 Verify if place details fecthing succesfully by UpdatePlaceAPI 
+----------------------------------------------------------------------
+14:26:57.390 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+14:26:57.391 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:1, Result:PASSED, Feature:features/GoogleAPI/placeValidations.feature, StartTime:2024-05-26T14:26:56.232+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+14:26:57.436 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+14:26:57.436 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 4 Verify if place details fecthing succesfully by DeletePlaceAPI 
+----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 4 Verify if place details fecthing succesfully by DeletePlaceAPI
+14:26:57.469 [main] INFO  utilities.BaseClass -     "place_id":"{$place_id}"
+14:26:57.472 [main] INFO  utilities.BaseClass - Rest Request: {
+    "place_id":"40b070c7a352f89e508f62b10733e53a"
+}
+
+14:26:57.479 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/delete/json
+14:26:58.580 [main] INFO  utilities.BaseClass - Response code: 200
+14:26:58.586 [main] INFO  stepDefinitions.CommonSteps - Response: {
+    "status": "OK"
+}
+14:26:58.604 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 4 Verify if place details fecthing succesfully by DeletePlaceAPI 
+----------------------------------------------------------------------
+14:26:58.605 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+14:26:58.605 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:1, Result:PASSED, Feature:features/GoogleAPI/placeValidations.feature, StartTime:2024-05-26T14:26:57.414+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+14:26:58.621 [main] INFO  stepDefinitions.Hooks - ******************* Test Suit Completed **********************
