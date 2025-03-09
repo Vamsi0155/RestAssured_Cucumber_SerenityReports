@@ -34,7 +34,7 @@
 - Serenity 4.1.4.0v or higher
 
 ## How to run from cmd line
-In the pom.xml, we have configured Extent reports and run the features by following different commands.
+In the pom.xml, we have configured Serenity reports and run the features by following different commands.
 
 ### To build the Project
 To build the project and download all dependencies, run the whole suite following Maven command:
