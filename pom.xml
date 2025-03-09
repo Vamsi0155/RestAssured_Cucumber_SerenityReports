@@ -98,11 +98,6 @@
       <version>${serenity.version}</version>
     </dependency>
     <dependency>
-      <groupId>net.serenity-bdd</groupId>
-      <artifactId>serenity-screenplay-webdriver</artifactId>
-      <version>${serenity.version}</version>
-    </dependency>
-    <dependency>
       <groupId>net.serenity-bdd.maven.plugins</groupId>
       <artifactId>serenity-maven-plugin</artifactId>
       <version>${serenity.version}</version>

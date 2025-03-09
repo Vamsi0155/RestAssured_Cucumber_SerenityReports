@@ -1,6 +1,7 @@
 package stepDefinitions;
 
 
+import factory.ReadConfigFiles;
 import io.cucumber.java.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -15,7 +16,7 @@ import java.io.PrintStream;
 public class Hooks {
 
 	/*
-	 * We can create many Before & After's with help order. 0 is the default value.
+	 * We can create many Before & After with help order. 0 is the default value.
 	 * Add conditions like "@After("@browser and not @headless")".
 	 * Pass "Scenario" as parameter to any tag.
 	 * 
@@ -23,8 +24,7 @@ public class Hooks {
 	 * If a step did not pass, the following step and its hooks will be skipped.
 	 */
 	
-	
-	private static PrintStream apiLogs;
+
 	private static String featureName;
 	
 	private static final Logger logger = LogManager.getLogger(Hooks.class);
@@ -40,7 +40,7 @@ public class Hooks {
 	}
 	
 	@Before
-	public void beforeScenario(Scenario scenario) throws FileNotFoundException {
+	public void beforeScenario(Scenario scenario) {
 		
 		logger.info("Entered before scenario");
 		
@@ -52,7 +52,6 @@ public class Hooks {
 		MyCustomListener.getTestStartedLog(scenario.getName(), featurePath.substring(featurePath.indexOf("src")));
 		
 		System.out.println("********** " + scenario.getName() + " is started *********");
-		BaseClass.initiateBaseURL(apiLogs);
 	}
 	
 	
@@ -68,10 +67,9 @@ public class Hooks {
 	@BeforeAll
 	public static void beforeAll() throws FileNotFoundException {
 	    // Runs before all scenarios
-		
-		apiLogs= new PrintStream(new FileOutputStream(System.getProperty("user.dir")+"//logs//Automation.log"));
-		logger.info("******************* Test Suit Started **********************");
-		
+
+		ReadConfigFiles.loadProperties();
+		logger.info("Automation Suit Started on {} environment", ReadConfigFiles.getConfigValue("EnvironmentType"));
 		System.out.println("******************* Run Started **********************");
 	}
 	
@@ -80,8 +78,8 @@ public class Hooks {
 	    // Runs after all scenarios
 		
 		System.out.println("******************* Run Completed **********************");
-		apiLogs.close();
-		logger.info("******************* Test Suit Completed **********************");
+		logger.info("===================== Run Statistics =====================");
+		logger.info("Automation Suit Completed on {} environment", ReadConfigFiles.getConfigValue("EnvironmentType"));
 	}
 	
 	

@@ -1,21 +1,265 @@
-14:26:48.318 [main] INFO  stepDefinitions.Hooks - ******************* Test Suit Started **********************
-14:26:49.272 [main] INFO  stepDefinitions.Hooks - Entered before scenario
-14:26:49.273 [main] INFO  utilities.MyCustomListener - 
+16:22:42.667 [main] INFO  utilities.MyCustomListener - 
+    _     __  __  _______   ___   ____   ____     _   _______  _   ___   ____    _                 
+   / \   | |  | ||__   __| / _ \ | |\ \ / /| |   / \ |__   __|| | / - \ | |\ \  | |    
+  / _ \  | |  | |   | |   | / \ || |  \_/  | |  / _ \   | |   | || / \ || | \ \ | |     
+ / ___ \ | \__/ |   | |   | \_/ || |       | | / --- \  | |   | || \_/ || |  \ \| |     
+/_/   \_\ \____/    |_|    \___/ |_|       |_|/_/   \_\ |_|   |_| \___/ |_|   \__/     
+--------------------------------------------------------------------------------------------
+16:22:42.691 [main] INFO  utilities.MyCustomListener - Automation Suite Started at: 2025-03-08 16:22:42
+16:22:42.784 [main] INFO  factory.ReadConfigFiles - configuration properties loaded successfully from: E:\IntelliJ_Workspace\RestAssured_Cucumber_Serenity//configure.properties
+16:22:42.785 [main] INFO  factory.ReadConfigFiles - API endpoints properties loaded successfully from: E:\IntelliJ_Workspace\RestAssured_Cucumber_Serenity//src//test//resources//properties//restAPIDetails.properties
+16:22:42.785 [main] INFO  stepDefinitions.Hooks - Automation Suit Started on QA environment
+16:22:42.813 [main] INFO  utilities.MyCustomListener - Global & Input values are cleared before feature started: EndtoEnd_E_commerce.feature
+16:22:43.079 [main] INFO  utilities.MyCustomListener - Global & Input values are cleared before feature started: placeValidations.feature
+16:22:43.098 [main] INFO  utilities.MyCustomListener - Global & Input values are cleared before feature started: EndtoEnd_E_commerce.feature
+16:22:43.649 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+16:22:43.650 [main] INFO  utilities.MyCustomListener - 
  _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
 |_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
   | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
   | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
   |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
 
-TEST STARTED: 1 Verify if place being succesfully added using AddPlaceAPI 
-----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 1 Verify if place being succesfully added using AddPlaceAPI
-14:26:50.758 [main] INFO  utilities.BaseClass -     "lat": {$latitude},
-14:26:50.758 [main] INFO  utilities.BaseClass -     "lng": {$longitude}
-14:26:50.758 [main] INFO  utilities.BaseClass -   "name": "{$name}",
-14:26:50.758 [main] INFO  utilities.BaseClass -   "address": "{$address}",
-14:26:50.759 [main] INFO  utilities.BaseClass -     "{$side layout}"
-14:26:50.759 [main] INFO  utilities.BaseClass -   "language": "{$language}"
-14:26:50.940 [main] INFO  utilities.BaseClass - Rest Request: {
+TEST STARTED: 1 Verify the end-end E-commerce APIs 
+----------------------------------------------------------------------(src/test/resources/features/EcommerceAPI/EndtoEnd_E_commerce.feature; 1 Verify the end-end E-commerce APIs)
+16:22:44.768 [main] INFO  utilities.BaseClass - List of header's: 
+{Content-Type=application/json}
+16:22:44.784 [main] INFO  utilities.BaseClass -     "userEmail": "{$userEmail}",
+16:22:44.785 [main] INFO  utilities.BaseClass -     "userPassword": "{$password}"
+16:22:44.785 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/api/ecom/auth/login
+16:22:47.238 [main] INFO  utilities.BaseClass - Rest Request: 
+{
+    "userEmail": "postman55@gmail.com",
+    "userPassword": "Naidu@117"
+}
+
+16:22:47.248 [main] INFO  utilities.BaseClass - Response code: 200
+16:22:47.327 [main] INFO  utilities.BaseClass - Response: {
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2E5Y2RlMTAzODQxZTljOWE2MGQ0YjgiLCJ1c2VyRW1haWwiOiJwb3N0bWFuNTVAZ21haWwuY29tIiwidXNlck1vYmlsZSI6MTIzNDU2Nzg5MCwidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc0MTQzMTE2MiwiZXhwIjoxNzcyOTg4NzYyfQ.28EF6QWueZmCJX4VNozmUfK5rBwymE-OjYc7894wNlg",
+    "userId": "63a9cde103841e9c9a60d4b8",
+    "message": "Login Successfully"
+}
+16:22:48.522 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 1 Verify the end-end E-commerce APIs 
+----------------------------------------------------------------------
+16:22:48.522 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+16:22:48.543 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:5, Result:PASSED, Feature:features/EcommerceAPI/EndtoEnd_E_commerce.feature, StartTime:2025-03-08T16:22:43.246+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+16:22:48.664 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+16:22:48.664 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 2 
+----------------------------------------------------------------------(src/test/resources/features/EcommerceAPI/EndtoEnd_E_commerce.feature; 2)
+16:22:48.688 [main] INFO  utilities.BaseClass - List of header's: 
+{Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2E5Y2RlMTAzODQxZTljOWE2MGQ0YjgiLCJ1c2VyRW1haWwiOiJwb3N0bWFuNTVAZ21haWwuY29tIiwidXNlck1vYmlsZSI6MTIzNDU2Nzg5MCwidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc0MTQzMTE2MiwiZXhwIjoxNzcyOTg4NzYyfQ.28EF6QWueZmCJX4VNozmUfK5rBwymE-OjYc7894wNlg, Content-Type=multipart/form-data}
+16:22:48.698 [main] ERROR Loader.class - Global value for key 'productImage-file' is null
+16:22:48.720 [main] INFO  utilities.BaseClass - List of form-data: 
+{productImage-file=./src/test/resources/images/productImage.jpg, productSubCategory=shirts, productFor=women, productName=T-shirt_191, productPrice=1500, productDescription=Addias Originals, productAddedBy=63a9cde103841e9c9a60d4b8, productCategory=fashion}
+16:22:48.720 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/api/ecom/product/add-product
+16:22:49.178 [main] INFO  utilities.BaseClass - Response code: 201
+16:22:49.182 [main] INFO  utilities.BaseClass - Response: {
+    "productId": "67cc217cc019fb1ad61c272d",
+    "message": "Product Added Successfully"
+}
+16:22:49.294 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 2 
+----------------------------------------------------------------------
+16:22:49.294 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+16:22:49.295 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:0, Result:PASSED, Feature:features/EcommerceAPI/EndtoEnd_E_commerce.feature, StartTime:2025-03-08T16:22:48.624+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+16:22:49.367 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+16:22:49.367 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 3 
+----------------------------------------------------------------------(src/test/resources/features/EcommerceAPI/EndtoEnd_E_commerce.feature; 3)
+16:22:49.377 [main] INFO  utilities.BaseClass - List of header's: 
+{Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2E5Y2RlMTAzODQxZTljOWE2MGQ0YjgiLCJ1c2VyRW1haWwiOiJwb3N0bWFuNTVAZ21haWwuY29tIiwidXNlck1vYmlsZSI6MTIzNDU2Nzg5MCwidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc0MTQzMTE2MiwiZXhwIjoxNzcyOTg4NzYyfQ.28EF6QWueZmCJX4VNozmUfK5rBwymE-OjYc7894wNlg, Content-Type=application/json}
+16:22:49.403 [main] INFO  utilities.BaseClass -             "country": "{$country}",
+16:22:49.403 [main] INFO  utilities.BaseClass -             "productOrderedId": "{$productId}"
+16:22:49.403 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/api/ecom/order/create-order
+16:22:49.799 [main] INFO  utilities.BaseClass - Rest Request: 
+{
+    "orders": [
+        {
+            "country": "India",
+            "productOrderedId": "67cc217cc019fb1ad61c272d"
+        }
+    ]
+}
+
+16:22:49.815 [main] INFO  utilities.BaseClass - Response code: 201
+16:22:49.818 [main] INFO  utilities.BaseClass - Response: {
+    "orders": [
+        "67cc217cc019fb1ad61c2731"
+    ],
+    "productOrderId": [
+        "67cc217cc019fb1ad61c272d"
+    ],
+    "message": "Order Placed Successfully"
+}
+16:22:50.021 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 3 
+----------------------------------------------------------------------
+16:22:50.022 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+16:22:50.023 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:0, Result:PASSED, Feature:features/EcommerceAPI/EndtoEnd_E_commerce.feature, StartTime:2025-03-08T16:22:49.346+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+16:22:50.155 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+16:22:50.155 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 4 
+----------------------------------------------------------------------(src/test/resources/features/EcommerceAPI/EndtoEnd_E_commerce.feature; 4)
+16:22:50.166 [main] INFO  utilities.BaseClass - List of header's: 
+{Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2E5Y2RlMTAzODQxZTljOWE2MGQ0YjgiLCJ1c2VyRW1haWwiOiJwb3N0bWFuNTVAZ21haWwuY29tIiwidXNlck1vYmlsZSI6MTIzNDU2Nzg5MCwidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc0MTQzMTE2MiwiZXhwIjoxNzcyOTg4NzYyfQ.28EF6QWueZmCJX4VNozmUfK5rBwymE-OjYc7894wNlg, Content-Type=application/json}
+16:22:50.203 [main] INFO  utilities.BaseClass - List of query param's: 
+{id=67cc217cc019fb1ad61c2731}
+16:22:50.217 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/api/ecom/order/get-orders-details
+16:22:50.408 [main] INFO  utilities.BaseClass - Response code: 200
+16:22:50.411 [main] INFO  utilities.BaseClass - Response: {
+    "data": {
+        "_id": "67cc217cc019fb1ad61c2731",
+        "orderById": "63a9cde103841e9c9a60d4b8",
+        "orderBy": "postman55@gmail.com",
+        "productOrderedId": "67cc217cc019fb1ad61c272d",
+        "productName": "T-shirt_191",
+        "country": "India",
+        "productDescription": "Addias Originals",
+        "productImage": "https://rahulshettyacademy.com/api/ecom/uploads/productImage_1741431164013.jpg",
+        "orderPrice": "1500",
+        "__v": 0
+    },
+    "message": "Orders fetched for customer Successfully"
+}
+16:22:50.509 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 4 
+----------------------------------------------------------------------
+16:22:50.510 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+16:22:50.510 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:0, Result:PASSED, Feature:features/EcommerceAPI/EndtoEnd_E_commerce.feature, StartTime:2025-03-08T16:22:50.124+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+16:22:50.554 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+16:22:50.554 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 5 
+----------------------------------------------------------------------(src/test/resources/features/EcommerceAPI/EndtoEnd_E_commerce.feature; 5)
+16:22:50.568 [main] INFO  utilities.BaseClass - List of header's: 
+{Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2E5Y2RlMTAzODQxZTljOWE2MGQ0YjgiLCJ1c2VyRW1haWwiOiJwb3N0bWFuNTVAZ21haWwuY29tIiwidXNlck1vYmlsZSI6MTIzNDU2Nzg5MCwidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc0MTQzMTE2MiwiZXhwIjoxNzcyOTg4NzYyfQ.28EF6QWueZmCJX4VNozmUfK5rBwymE-OjYc7894wNlg, Content-Type=application/json}
+16:22:50.573 [main] INFO  utilities.BaseClass - List of path param's: 
+{OrderId=67cc217cc019fb1ad61c2731}
+16:22:50.580 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/api/ecom/order/delete-order/{OrderId}
+16:22:50.808 [main] INFO  utilities.BaseClass - Response code: 200
+16:22:50.809 [main] INFO  utilities.BaseClass - Response: {
+    "message": "Orders Deleted Successfully"
+}
+16:22:50.832 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 5 
+----------------------------------------------------------------------
+16:22:50.833 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+16:22:50.833 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:0, Result:PASSED, Feature:features/EcommerceAPI/EndtoEnd_E_commerce.feature, StartTime:2025-03-08T16:22:50.534+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+16:22:50.873 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+16:22:50.874 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 6 
+----------------------------------------------------------------------(src/test/resources/features/EcommerceAPI/EndtoEnd_E_commerce.feature; 6)
+16:22:50.886 [main] INFO  utilities.BaseClass - List of header's: 
+{Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2E5Y2RlMTAzODQxZTljOWE2MGQ0YjgiLCJ1c2VyRW1haWwiOiJwb3N0bWFuNTVAZ21haWwuY29tIiwidXNlck1vYmlsZSI6MTIzNDU2Nzg5MCwidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc0MTQzMTE2MiwiZXhwIjoxNzcyOTg4NzYyfQ.28EF6QWueZmCJX4VNozmUfK5rBwymE-OjYc7894wNlg, Content-Type=application/json}
+16:22:50.899 [main] INFO  utilities.BaseClass - List of path param's: 
+{productId=67cc217cc019fb1ad61c272d}
+16:22:50.908 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/api/ecom/product/delete-product/{productId}
+16:22:51.816 [main] INFO  utilities.BaseClass - Response code: 200
+16:22:51.819 [main] INFO  utilities.BaseClass - Response: {
+    "message": "Product Deleted Successfully"
+}
+16:22:51.888 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 6 
+----------------------------------------------------------------------
+16:22:51.888 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+16:22:51.889 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:1, Result:PASSED, Feature:features/EcommerceAPI/EndtoEnd_E_commerce.feature, StartTime:2025-03-08T16:22:50.855+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+16:22:51.917 [main] INFO  utilities.MyCustomListener - Global & Input values are cleared before feature started: placeValidations.feature
+16:22:51.943 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+16:22:51.943 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 1 Verify if place being successfully added using AddPlaceAPI 
+----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 1 Verify if place being successfully added using AddPlaceAPI)
+16:22:51.952 [main] INFO  utilities.BaseClass - List of header's: 
+{Accept=*/*, Content-Type=application/json}
+16:22:51.961 [main] INFO  utilities.BaseClass - List of query param's: 
+{key=qaclick123}
+16:22:51.967 [main] INFO  utilities.BaseClass -     "lat": {$latitude},
+16:22:51.968 [main] INFO  utilities.BaseClass -     "lng": {$longitude}
+16:22:51.968 [main] INFO  utilities.BaseClass -   "name": "{$name}",
+16:22:51.968 [main] INFO  utilities.BaseClass -   "address": "{$address}",
+16:22:51.968 [main] INFO  utilities.BaseClass -     "{$side layout}"
+16:22:51.968 [main] INFO  utilities.BaseClass -   "language": "{$language}"
+16:22:51.969 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/add/json
+16:22:52.162 [main] INFO  utilities.BaseClass - Rest Request: 
+{
   "location": {
     "lat": -31.388192,
     "lng": 37.589062
@@ -23,7 +267,7 @@ TEST STARTED: 1 Verify if place being succesfully added using AddPlaceAPI
   "accuracy": 50,
   "name": "atest",
   "phone_number": "(+91) 983 893 3937",
-  "address": "Marathahalli, Bangalore",
+  "address": "Maratahalli, Bangalore",
   "types": [
     "shoe park",
     "shop"
@@ -32,16 +276,15 @@ TEST STARTED: 1 Verify if place being succesfully added using AddPlaceAPI
   "language": "India-IND"
 }
 
-14:26:50.950 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/add/json
-14:26:53.386 [main] INFO  utilities.BaseClass - Response code: 200
-14:26:53.647 [main] INFO  stepDefinitions.CommonSteps - Response: {
+16:22:52.180 [main] INFO  utilities.BaseClass - Response code: 200
+16:22:52.184 [main] INFO  utilities.BaseClass - Response: {
     "status": "OK",
-    "place_id": "40b070c7a352f89e508f62b10733e53a",
+    "place_id": "fdd5f08f52b35b999315f6be0bf4ccce",
     "scope": "APP",
-    "reference": "af972d909ee3af079045182a071ba90baf972d909ee3af079045182a071ba90b",
-    "id": "af972d909ee3af079045182a071ba90b"
+    "reference": "61f134bed49d16049ba4870182ebb82061f134bed49d16049ba4870182ebb820",
+    "id": "61f134bed49d16049ba4870182ebb820"
 }
-14:26:54.957 [main] INFO  utilities.MyCustomListener - 
+16:22:52.317 [main] INFO  utilities.MyCustomListener - 
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
   _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
  (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
@@ -49,23 +292,25 @@ TEST STARTED: 1 Verify if place being succesfully added using AddPlaceAPI
  (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
         /_/                                                                
 
-TEST PASSED: 1 Verify if place being succesfully added using AddPlaceAPI 
+TEST PASSED: 1 Verify if place being successfully added using AddPlaceAPI 
 ----------------------------------------------------------------------
-14:26:54.957 [main] INFO  stepDefinitions.Hooks - Entered after scenario
-14:26:54.999 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:6, Result:PASSED, Feature:features/GoogleAPI/placeValidations.feature, StartTime:2024-05-26T14:26:48.865+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
-14:26:55.153 [main] INFO  stepDefinitions.Hooks - Entered before scenario
-14:26:55.153 [main] INFO  utilities.MyCustomListener - 
+16:22:52.317 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+16:22:52.317 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:0, Result:PASSED, Feature:features/GoogleAPI/placeValidations.feature, StartTime:2025-03-08T16:22:51.926+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+16:22:52.351 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+16:22:52.352 [main] INFO  utilities.MyCustomListener - 
  _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
 |_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
   | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
   | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
   |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
 
-TEST STARTED: 2 Verify if place details fecthing succesfully by GetPlaceAPI 
-----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 2 Verify if place details fecthing succesfully by GetPlaceAPI
-14:26:55.238 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/get/json
-14:26:56.133 [main] INFO  utilities.BaseClass - Response code: 200
-14:26:56.143 [main] INFO  stepDefinitions.CommonSteps - Response: {
+TEST STARTED: 2 Verify if place details fetching successfully by GetPlaceAPI 
+----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 2 Verify if place details fetching successfully by GetPlaceAPI)
+16:22:52.360 [main] INFO  utilities.BaseClass - List of query param's: 
+{key=qaclick123, place_id=fdd5f08f52b35b999315f6be0bf4ccce}
+16:22:52.365 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/get/json
+16:22:53.830 [main] INFO  utilities.BaseClass - Response code: 200
+16:22:53.837 [main] INFO  utilities.BaseClass - Response: {
     "location": {
         "latitude": "-31.388192",
         "longitude": "37.589062"
@@ -73,12 +318,12 @@ TEST STARTED: 2 Verify if place details fecthing succesfully by GetPlaceAPI
     "accuracy": "50",
     "name": "atest",
     "phone_number": "(+91) 983 893 3937",
-    "address": "Marathahalli, Bangalore",
+    "address": "Maratahalli, Bangalore",
     "types": "shoe park,shop",
     "website": "http://google.com",
     "language": "India-IND"
 }
-14:26:56.200 [main] INFO  utilities.MyCustomListener - 
+16:22:53.969 [main] INFO  utilities.MyCustomListener - 
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
   _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
  (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
@@ -86,35 +331,38 @@ TEST STARTED: 2 Verify if place details fecthing succesfully by GetPlaceAPI
  (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
         /_/                                                                
 
-TEST PASSED: 2 Verify if place details fecthing succesfully by GetPlaceAPI 
+TEST PASSED: 2 Verify if place details fetching successfully by GetPlaceAPI 
 ----------------------------------------------------------------------
-14:26:56.201 [main] INFO  stepDefinitions.Hooks - Entered after scenario
-14:26:56.201 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:1, Result:PASSED, Feature:features/GoogleAPI/placeValidations.feature, StartTime:2024-05-26T14:26:55.092+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
-14:26:56.253 [main] INFO  stepDefinitions.Hooks - Entered before scenario
-14:26:56.253 [main] INFO  utilities.MyCustomListener - 
+16:22:53.969 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+16:22:53.969 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:1, Result:PASSED, Feature:features/GoogleAPI/placeValidations.feature, StartTime:2025-03-08T16:22:52.337+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+16:22:54.019 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+16:22:54.019 [main] INFO  utilities.MyCustomListener - 
  _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
 |_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
   | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
   | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
   |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
 
-TEST STARTED: 3 Verify if place details fecthing succesfully by UpdatePlaceAPI 
-----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 3 Verify if place details fecthing succesfully by UpdatePlaceAPI
-14:26:56.285 [main] INFO  utilities.BaseClass - "place_id":"{$place_id}",
-14:26:56.285 [main] INFO  utilities.BaseClass - "address":"{$address}",
-14:26:56.285 [main] INFO  utilities.BaseClass - "key":"{$key}"
-14:26:56.292 [main] INFO  utilities.BaseClass - Rest Request: {
-"place_id":"40b070c7a352f89e508f62b10733e53a",
+TEST STARTED: 3 Verify if place details fetching successfully by UpdatePlaceAPI 
+----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 3 Verify if place details fetching successfully by UpdatePlaceAPI)
+16:22:54.028 [main] INFO  utilities.BaseClass - List of query param's: 
+{key=qaclick123}
+16:22:54.038 [main] INFO  utilities.BaseClass - "place_id":"{$place_id}",
+16:22:54.038 [main] INFO  utilities.BaseClass - "address":"{$address}",
+16:22:54.038 [main] INFO  utilities.BaseClass - "key":"{$key}"
+16:22:54.039 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/update/json
+16:22:56.258 [main] INFO  utilities.BaseClass - Rest Request: 
+{
+"place_id":"fdd5f08f52b35b999315f6be0bf4ccce",
 "address":"HSR Layout",
 "key":"qaclick123"
 }
 
-14:26:56.299 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/update/json
-14:26:57.363 [main] INFO  utilities.BaseClass - Response code: 200
-14:26:57.370 [main] INFO  stepDefinitions.CommonSteps - Response: {
+16:22:56.272 [main] INFO  utilities.BaseClass - Response code: 200
+16:22:56.275 [main] INFO  utilities.BaseClass - Response: {
     "msg": "Address successfully updated"
 }
-14:26:57.390 [main] INFO  utilities.MyCustomListener - 
+16:22:56.300 [main] INFO  utilities.MyCustomListener - 
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
   _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
  (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
@@ -122,31 +370,34 @@ TEST STARTED: 3 Verify if place details fecthing succesfully by UpdatePlaceAPI
  (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
         /_/                                                                
 
-TEST PASSED: 3 Verify if place details fecthing succesfully by UpdatePlaceAPI 
+TEST PASSED: 3 Verify if place details fetching successfully by UpdatePlaceAPI 
 ----------------------------------------------------------------------
-14:26:57.390 [main] INFO  stepDefinitions.Hooks - Entered after scenario
-14:26:57.391 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:1, Result:PASSED, Feature:features/GoogleAPI/placeValidations.feature, StartTime:2024-05-26T14:26:56.232+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
-14:26:57.436 [main] INFO  stepDefinitions.Hooks - Entered before scenario
-14:26:57.436 [main] INFO  utilities.MyCustomListener - 
+16:22:56.300 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+16:22:56.300 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:2, Result:PASSED, Feature:features/GoogleAPI/placeValidations.feature, StartTime:2025-03-08T16:22:54.005+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+16:22:56.341 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+16:22:56.341 [main] INFO  utilities.MyCustomListener - 
  _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
 |_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
   | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
   | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
   |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
 
-TEST STARTED: 4 Verify if place details fecthing succesfully by DeletePlaceAPI 
-----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 4 Verify if place details fecthing succesfully by DeletePlaceAPI
-14:26:57.469 [main] INFO  utilities.BaseClass -     "place_id":"{$place_id}"
-14:26:57.472 [main] INFO  utilities.BaseClass - Rest Request: {
-    "place_id":"40b070c7a352f89e508f62b10733e53a"
+TEST STARTED: 4 Verify if place details fetching successfully by DeletePlaceAPI 
+----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 4 Verify if place details fetching successfully by DeletePlaceAPI)
+16:22:56.352 [main] INFO  utilities.BaseClass - List of query param's: 
+{key=qaclick123}
+16:22:56.357 [main] INFO  utilities.BaseClass -     "place_id":"{$place_id}"
+16:22:56.357 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/delete/json
+16:22:58.444 [main] INFO  utilities.BaseClass - Rest Request: 
+{
+    "place_id":"fdd5f08f52b35b999315f6be0bf4ccce"
 }
 
-14:26:57.479 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/delete/json
-14:26:58.580 [main] INFO  utilities.BaseClass - Response code: 200
-14:26:58.586 [main] INFO  stepDefinitions.CommonSteps - Response: {
+16:22:58.460 [main] INFO  utilities.BaseClass - Response code: 200
+16:22:58.462 [main] INFO  utilities.BaseClass - Response: {
     "status": "OK"
 }
-14:26:58.604 [main] INFO  utilities.MyCustomListener - 
+16:22:58.515 [main] INFO  utilities.MyCustomListener - 
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
   _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
  (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
@@ -154,8 +405,12 @@ TEST STARTED: 4 Verify if place details fecthing succesfully by DeletePlaceAPI
  (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
         /_/                                                                
 
-TEST PASSED: 4 Verify if place details fecthing succesfully by DeletePlaceAPI 
+TEST PASSED: 4 Verify if place details fetching successfully by DeletePlaceAPI 
 ----------------------------------------------------------------------
-14:26:58.605 [main] INFO  stepDefinitions.Hooks - Entered after scenario
-14:26:58.605 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:1, Result:PASSED, Feature:features/GoogleAPI/placeValidations.feature, StartTime:2024-05-26T14:26:57.414+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
-14:26:58.621 [main] INFO  stepDefinitions.Hooks - ******************* Test Suit Completed **********************
+16:22:58.516 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+16:22:58.516 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:2, Result:PASSED, Feature:features/GoogleAPI/placeValidations.feature, StartTime:2025-03-08T16:22:56.324+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+16:22:58.532 [main] INFO  stepDefinitions.Hooks - ===================== Run Statistics =====================
+16:22:58.532 [main] INFO  stepDefinitions.Hooks - Automation Suit Completed on QA environment
+16:22:58.536 [main] INFO  utilities.MyCustomListener - Automation Suite Finished at: 2025-03-08 16:22:58
+16:22:58.537 [main] INFO  utilities.MyCustomListener - Run Duration: 0h 0m 15s
+16:22:58.537 [main] INFO  utilities.MyCustomListener - Run status: PASSED

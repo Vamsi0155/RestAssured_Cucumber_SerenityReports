@@ -1,11 +1,14 @@
 package utilities;
 
+import factory.Loader;
 import factory.ReadConfigFiles;
 import io.cucumber.plugin.EventListener;
 import io.cucumber.plugin.event.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import pojoClasses.ResponseLoader;
 
+import java.nio.file.Paths;
 import java.time.Instant;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
@@ -26,11 +29,31 @@ public class MyCustomListener implements EventListener {
 	
 	@Override
 	public void setEventPublisher(EventPublisher publisher) {
-		
+
+		publisher.registerHandlerFor(TestRunStarted.class, this::onTestRunStarted);
+		publisher.registerHandlerFor(TestSourceRead.class, this::onFeatureStarted);
+		publisher.registerHandlerFor(TestSourceParsed.class, this::onFeatureFinished);
 		publisher.registerHandlerFor(TestCaseStarted.class, this::onScenarioStarted);
 		publisher.registerHandlerFor(TestStepStarted.class, this::onStepStarted);
 		publisher.registerHandlerFor(TestStepFinished.class, this::onStepFinished);
 		publisher.registerHandlerFor(TestCaseFinished.class, this::onScenarioFinished);
+		publisher.registerHandlerFor(TestRunFinished.class, this::onTestRunFinished);
+	}
+
+	public void onTestRunStarted(TestRunStarted run){
+		logger.info(MyCustomListener.setAutomationSuiteLog());
+		String formattedFinishTime = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss").withZone(ZoneId.systemDefault()).format(run.getInstant());
+		logger.info("Automation Suite Started at: {}", formattedFinishTime);
+	}
+
+	public void onFeatureStarted(TestSourceRead read){
+		Loader.clearLoadInputValues();
+		ResponseLoader.clearGlobalValues();
+		logger.info("Global & Input values are cleared before feature started: {}", Paths.get(read.getUri()).getFileName().toString());
+	}
+
+	public void onFeatureFinished(TestSourceParsed read){
+
 	}
 	
 	public void onScenarioStarted(TestCaseStarted test) {
@@ -47,7 +70,7 @@ public class MyCustomListener implements EventListener {
 	
 	public void onStepFinished(TestStepFinished step) {
 		
-		if(step.getResult().getStatus().isOk() == false) {
+		if(!step.getResult().getStatus().isOk()) {
 			failedStepLine = null;
 			PickleStepTestStep pickle = (PickleStepTestStep)step.getTestStep();
 			Step st = pickle.getStep();
@@ -57,11 +80,16 @@ public class MyCustomListener implements EventListener {
 		}
 	}
 	
-	
 	public void onScenarioFinished(TestCaseFinished test) {
-		
-		
 		this.writeRunDetailsToDB(test, test.getTestCase().getUri().getPath());
+	}
+
+	public void onTestRunFinished(TestRunFinished run){
+		Result result = run.getResult();
+		String formattedFinishTime = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss").withZone(ZoneId.systemDefault()).format(run.getInstant());
+		logger.info("Automation Suite Finished at: {}", formattedFinishTime);
+		logger.info("Run Duration: {}h {}m {}s", result.getDuration().toHours(), result.getDuration().toMinutes(), result.getDuration().toSeconds());
+		logger.info("Run status: {}", result.getStatus().toString());
 	}
 	
 	
@@ -73,7 +101,7 @@ public class MyCustomListener implements EventListener {
 		System.out.println("Time: " + runDateTime);
 		logger.info("Test finished outcome:: Duration:" + test.getResult().getDuration().getSeconds() + ", Result:" + test.getResult().getStatus().toString() + ", Feature:" + scenarioPath + ", StartTime:" +startTime + ", TestFailedStep:" + failedStepNum + ", TestFailedStepLine:" + failedStepLine + ", FailureCause:" + test.getResult().getError());
 		
-		String analyticsReq = ReadConfigFiles.config.getProperty("AnalyticsRequired");
+		String analyticsReq = ReadConfigFiles.getConfigValue("AnalyticsRequired");
 		if(analyticsReq != null && analyticsReq.equals("Y")) {
 			
 			try {
@@ -142,7 +170,16 @@ public class MyCustomListener implements EventListener {
 		}
 		
 	}
-	
+
+	public static String setAutomationSuiteLog() {
+		return
+				"\n    _     __  __  _______   ___   ____   ____     _   _______  _   ___   ____    _                 \n" +
+						"   / \\   | |  | ||__   __| / _ \\ | |\\ \\ / /| |   / \\ |__   __|| | / - \\ | |\\ \\  | |    \n" +
+						"  / _ \\  | |  | |   | |   | / \\ || |  \\_/  | |  / _ \\   | |   | || / \\ || | \\ \\ | |     \n" +
+						" / ___ \\ | \\__/ |   | |   | \\_/ || |       | | / --- \\  | |   | || \\_/ || |  \\ \\| |     \n" +
+						"/_/   \\_\\ \\____/    |_|    \\___/ |_|       |_|/_/   \\_\\ |_|   |_| \\___/ |_|   \\__/     \n" +
+						"--------------------------------------------------------------------------------------------";
+	}
 	
 	public static void getTestStartedLog(String scenarioName, String path) {
             
@@ -154,7 +191,7 @@ public class MyCustomListener implements EventListener {
                 "  |_| |_____|____/ |_|   |____/ |_/_/   \\_\\_| \\_\\|_| |_____|____/ \n" +
                 "\n" +
                 "TEST STARTED: " + scenarioName + " \n" +
-                "----------------------------------------------------------------------("+ path + "; " + scenarioName;
+                "----------------------------------------------------------------------("+ path + "; " + scenarioName +")";
 		
 		logger.info(testStarted);
 	}

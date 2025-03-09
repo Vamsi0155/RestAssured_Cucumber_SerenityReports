@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-		features="src/test/resources/features/GoogleAPI/placeValidations.feature",
+		features="src/test/resources/features",
 		glue="stepDefinitions",
 		monochrome=true,
 		tags="",

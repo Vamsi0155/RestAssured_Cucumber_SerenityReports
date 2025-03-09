@@ -22,23 +22,23 @@ public class DBConnection {
 	
 	
 	private DBConnection() {
-		logger.error("Enetered DB Connection class: ");
+		logger.error("Entered DB Connection class: ");
 	}
 	
 	
-	private static Connection createDataBaseConnnection() {
+	private static Connection createDataBaseConnection() {
 		
 		try {
-			String user = ReadConfigFiles.config.getProperty("DatabaseUserName");
+			String user = ReadConfigFiles.getConfigValue("DatabaseUserName");
 			String password = null;
-			String url = ReadConfigFiles.config.getProperty("DatabaseURL");
+			String url = ReadConfigFiles.getConfigValue("DatabaseURL");
 			
-			DriverManager.registerDriver((Driver)Class.forName(ReadConfigFiles.config.getProperty("")).getDeclaredConstructor().newInstance());
-			if(ReadConfigFiles.config.getProperty("DBPasswordEnc") !=null && ReadConfigFiles.config.getProperty("DBPasswordEnc").equals("Y")) {
-				password = encryptDecrypt("decrypt", ReadConfigFiles.config.getProperty("DatabasePassword"));
+			DriverManager.registerDriver((Driver)Class.forName(ReadConfigFiles.getConfigValue("")).getDeclaredConstructor().newInstance());
+			if(ReadConfigFiles.getConfigValue("DBPasswordEnc") !=null && ReadConfigFiles.getConfigValue("DBPasswordEnc").equals("Y")) {
+				password = encryptDecrypt("decrypt", ReadConfigFiles.getConfigValue("DatabasePassword"));
 			}
 			else {
-				password = ReadConfigFiles.config.getProperty("DatabasePassword");
+				password = ReadConfigFiles.getConfigValue("DatabasePassword");
 			}
 			
 			Properties info = new Properties();
@@ -62,7 +62,7 @@ public class DBConnection {
 		
 		try {
 			
-			Connection dbConnection = createDataBaseConnnection();
+			Connection dbConnection = createDataBaseConnection();
 			Throwable var3 = null;
 			
 			try {
@@ -144,8 +144,8 @@ public class DBConnection {
 			}
 		}
 		catch(Exception e) {
-			logger.error("Error in executing query: " + query);
-			logger.error("Error in execute DB query method " + e);
+            logger.error("Error in executing query: {}", query);
+            logger.error("Error in execute DB query method {}", e);
 			logger.error("Error in connecting to the database in execute DB query method");
 		}
 		
@@ -158,12 +158,12 @@ public class DBConnection {
 		
 		try {
 			
-			Connection dbConnection = createDataBaseConnnection();
+			Connection dbConnection = createDataBaseConnection();
 			Throwable var2 = null;
 			
 			try {
 				
-				File file = new File(ReadConfigFiles.config.getProperty("DBScriptsPath") + fileName);
+				File file = new File(ReadConfigFiles.getConfigValue("DBScriptsPath") + fileName);
 				List<String> line = IOUtils.readLines(new FileInputStream(file), "UTF-8");
 				Iterator<String> var5 = line.iterator();
 				
@@ -171,7 +171,7 @@ public class DBConnection {
 					String query = var5.next();
 					if(!query.isEmpty()) {
 						if(query.contains("DbAlias#")) {
-							query = query.replace("DbAlias#", ReadConfigFiles.config.getProperty("DatabaseAlias"));
+							query = query.replace("DbAlias#", ReadConfigFiles.getConfigValue("DatabaseAlias"));
 						}
 						
 						if(query.contains(";")) {
@@ -200,7 +200,7 @@ public class DBConnection {
 			
 		}
 		catch (Exception e) {
-			logger.error("Error while executing file: " + e.getMessage());
+            logger.error("Error while executing file: {}", e.getMessage());
 		}
 	}
 	
@@ -209,7 +209,7 @@ public class DBConnection {
 		
 		try {
 			
-			Connection dbConnection = createDataBaseConnnection();
+			Connection dbConnection = createDataBaseConnection();
 			PreparedStatement pstmt = dbConnection != null ? dbConnection.prepareStatement(query) : null;
 			Throwable var3 = null;
 			
@@ -244,7 +244,7 @@ public class DBConnection {
 			
 		}
 		catch(Exception e) {
-			logger.error("Error in connecting to the database for executing file data method: ", query, e);
+			logger.error("Error in connecting to the database for executing file data method: {}", query, e);
 		}
 	}
 	
@@ -276,7 +276,7 @@ public class DBConnection {
 			}
 		}
 		catch(Exception e) {
-			logger.error("Error in connecting to the database for executing file data method: ", query, e);
+			logger.error("Error in connecting to the database for executing file data method: {}", query, e);
 		}
 		
 	}
