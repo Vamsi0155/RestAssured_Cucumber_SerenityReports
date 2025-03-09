@@ -171,62 +171,7 @@ public class BaseClass {
 		else 
 			throw new RuntimeException("No response found!!");
 	}
-	
-/*	public String createInputJsonFile(String service) {
-		
-		String reqTempFile ="./src/test/resources/requestTemplates/" + service + "_Json.txt";
-		
-		StringBuilder modifiedContent = new StringBuilder();
 
-        try (BufferedReader br = new BufferedReader(new FileReader(reqTempFile))) {
-            String line;
-            while ((line = br.readLine()) != null) {
-                // Split the line based on '{$'
-                String[] parts = line.split("\\{\\$");
-
-                if (parts.length > 1) {
-                    // Process each part
-                    modifiedContent.append(parts[0]);  // Append the first part before '{$'
-
-                    for (int i = 1; i < parts.length; i++) {
-                        // Find the closing '}' to extract the variable name
-                        int endIndex = parts[i].indexOf('}');
-                        if (endIndex != -1) {
-                            String key = parts[i].substring(0, endIndex);
-                            // Replace the keyValue with the corresponding Java value
-                            String value=Loader.getInputValue(key, service);
-                            if(!value.isEmpty()) {
-                            	modifiedContent.append(value);
-                            }
-                            else {
-                            	modifiedContent.append("{$").append(key).append("}");
-                            	break;
-                            }
-
-                            // Append the rest of the part after '}'
-                            modifiedContent.append(parts[i].substring(endIndex + 1));
-                        } else {
-                            // If no closing '}' is found, append the original "{$" + parts[i]
-                            modifiedContent.append("{$").append(parts[i]);
-                        }
-                    }
-                } 
-                else {
-                    // If no '{$' is found in the line, append the original line
-                    modifiedContent.append(line);
-                }
-                // Move to the next line
-                modifiedContent.append(System.lineSeparator());
-            }
-            
-        }
-        catch (IOException e) {
-            logger.error("Error in formating request for Rest API: ", e.getMessage());
-        }
-
-        return modifiedContent.toString();
-	} */
-	
 	public String createJsonInput(String restAPI) {
 		
 		String reqTempFile ="./src/test/resources/requestTemplates/" + restAPI + "_Json.txt";
