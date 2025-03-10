@@ -8,7 +8,7 @@ Feature: End to End E-commerce API validation
       | application/json 	|
     When user calls "LoginUser" API with "POST" request:
       | userEmail 	        | password  |
-      | postman55@gmail.com | Naidu@117 |
+      | postman123@gmail.com | Dummy@123 |
     Then validate the status "200" with below details:
       | message              | userId    | token      |
       | Login Successfully 	 | NotNull#  | NotNull#   |
