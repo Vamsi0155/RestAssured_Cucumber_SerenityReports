@@ -25,7 +25,7 @@
 #### Spring Batch Integration:
 - The framework includes a Batches class, which executes Spring Batch jobs for batch processing use cases.
 
-## Prerequisites
+## Pre-requisites
 - Java 17 or higher
 - Maven 3.6v or higher
 - Junit 5.0v or higher
@@ -49,7 +49,7 @@ mvn clean install -Dcucumber.options="--features src/test/resources/features/Goo
 
 ### To run multiple features, use the following command:
 ```bash
-mvn clean install -Dcucumber.features=src/test/resources/features/GoogleAPI/placeValidations.feature,src/test/resources/features/EcommerceAPI/EndtoEnd_E_commerce.feature
+mvn clean install -Dcucumber.options="--features src/test/resources/features/GoogleAPI/placeValidations.feature,src/test/resources/features/EcommerceAPI/EndtoEnd_E_commerce.feature"
 ```
 
 ### To run scenarios with Tag's, use the following command:
@@ -61,6 +61,21 @@ mvn clean install -Dcucumber.options="--tags @Regression"
 ```bash
 mvn clean install -Dcucumber.options="--features src/test/resources/features/GoogleAPI/placeValidations.feature --tags @Regression"
 ```
+
+### To run any specific scenario with name in a feature file, use the following command:
+```bash
+mvn clean install -Dcucumber.options="--features src/test/resources/features/GoogleAPI/placeValidations.feature --name '2 Verify if place details fetching successfully by GetPlaceAPI'"
+```
+### Or specify the line number when scenario start with key-word 'Scenario:'
+```bash
+mvn clean install -Dcucumber.options="--features src/test/resources/features/GoogleAPI/placeValidations.feature:21"
+```
+
+### To re-run the failed scenarios, use the following command:
+```bash
+mvn clean install -Dcucumber.options="@target/rerun/failedScenarios.txt"
+```
+
 
 ## Jenkins CI/CD
 Choose the Maven project and configure by following detail,

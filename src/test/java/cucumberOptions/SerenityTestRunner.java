@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
 		plugin={"pretty",
 				"utilities.MyCustomListener",
 				"html:reports/CucumberReports/Report.html",
-				"rerun:target/failedScenarios.txt"
+				"rerun:target/rerun/failedScenarios.txt"
 		}
 		
 		)
