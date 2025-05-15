@@ -44,36 +44,36 @@ mvn clean install
 
 ### To run specific feature, use the following command:
 ```bash
-mvn clean install -Dcucumber.options="--features src/test/resources/features/GoogleAPI/placeValidations.feature"
+mvn clean install -Dcucumber.features=src/test/resources/features/GoogleAPI/placeValidations.feature
 ```
 
 ### To run multiple features, use the following command:
 ```bash
-mvn clean install -Dcucumber.options="--features src/test/resources/features/GoogleAPI/placeValidations.feature,src/test/resources/features/EcommerceAPI/EndtoEnd_E_commerce.feature"
+mvn clean install -Dcucumber.features=src/test/resources/features/GoogleAPI/placeValidations.feature,src/test/resources/features/EcommerceAPI/EndtoEnd_E_commerce.feature
 ```
 
 ### To run scenarios with Tag's, use the following command:
 ```bash
-mvn clean install -Dcucumber.options="--tags @Regression"
+mvn clean install -Dcucumber.filter.tags=Regression
 ```
 
 ### To run features with Tag's, use the following command:
 ```bash
-mvn clean install -Dcucumber.options="--features src/test/resources/features/GoogleAPI/placeValidations.feature --tags @Regression"
+mvn clean install -Dcucumber.features=src/test/resources/features/GoogleAPI/placeValidations.feature -Dcucumber.filter.tags=Regression
 ```
 
 ### To run any specific scenario with name in a feature file, use the following command:
 ```bash
-mvn clean install -Dcucumber.options="--features src/test/resources/features/GoogleAPI/placeValidations.feature --name '2 Verify if place details fetching successfully by GetPlaceAPI'"
+mvn clean install -Dcucumber.features=src/test/resources/features/GoogleAPI/placeValidations.feature --name '2 Verify if place details fetching successfully by GetPlaceAPI'
 ```
 ### Or specify the line number when scenario start with key-word 'Scenario:'
 ```bash
-mvn clean install -Dcucumber.options="--features src/test/resources/features/GoogleAPI/placeValidations.feature:21"
+mvn clean install -Dcucumber.features=src/test/resources/features/GoogleAPI/placeValidations.feature:21
 ```
 
 ### To re-run the failed scenarios, use the following command:
 ```bash
-mvn clean install -Dcucumber.options="@target/rerun/failedScenarios.txt"
+mvn clean install -Dcucumber.features=@target/rerun/failedScenarios.txt
 ```
 
 
@@ -93,7 +93,7 @@ Choose the Maven project and configure by following detail,
 1. For Root POM, give as "pom.xml"
 2. For Goals and Options, use the following command:
 ```bash
-clean verify -Dcucumber.options="--features ${Features} --tags @${Tags}"
+clean verify -Dcucumber.features=${Features} -Dcucumber.filter.tags=${Tags}
 ```
 3. Go to "Advanced" and check the "use custom workspace". Add project directory path.
 

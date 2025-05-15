@@ -434,3 +434,1948 @@ VALUES ((Select MAX(Run_id) from Auto_Run_Stat), 'QA', '4 Verify if place detail
 21:52:59.151 [main] INFO  utilities.MyCustomListener - Automation Suite Finished at: 2025-04-01 21:52:59
 21:52:59.151 [main] INFO  utilities.MyCustomListener - Run Duration: 0h 0m 18s
 21:52:59.151 [main] INFO  utilities.MyCustomListener - Run status: PASSED
+19:12:09.351 [main] INFO  utilities.MyCustomListener - 
+    _     __  __  _______   ___   ____   ____     _   _______  _   ___   ____    _                 
+   / \   | |  | ||__   __| / _ \ | |\ \ / /| |   / \ |__   __|| | / - \ | |\ \  | |    
+  / _ \  | |  | |   | |   | / \ || |  \_/  | |  / _ \   | |   | || / \ || | \ \ | |     
+ / ___ \ | \__/ |   | |   | \_/ || |       | | / --- \  | |   | || \_/ || |  \ \| |     
+/_/   \_\ \____/    |_|    \___/ |_|       |_|/_/   \_\ |_|   |_| \___/ |_|   \__/     
+--------------------------------------------------------------------------------------------
+19:12:09.366 [main] INFO  utilities.MyCustomListener - Automation Suite Started at: 2025-05-15 19:12:09
+19:12:09.476 [main] INFO  factory.ReadConfigFiles - configuration properties loaded successfully from: E:\IntelliJ_Workspace\RestAssured_Cucumber_SerenityReports//configure.properties
+19:12:09.491 [main] INFO  factory.ReadConfigFiles - API endpoints properties loaded successfully from: E:\IntelliJ_Workspace\RestAssured_Cucumber_SerenityReports//src//test//resources//properties//restAPIDetails.properties
+19:12:09.491 [main] INFO  stepDefinitions.Hooks - Automation Suit Started on QA environment
+19:12:09.507 [main] INFO  utilities.MyCustomListener - Global & Input values are cleared before feature started: EndtoEnd_E_commerce.feature
+19:12:09.976 [main] INFO  utilities.MyCustomListener - Global & Input values are cleared before feature started: placeValidations.feature
+19:12:10.007 [main] INFO  utilities.MyCustomListener - Global & Input values are cleared before feature started: EndtoEnd_E_commerce.feature
+19:12:10.679 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+19:12:10.679 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 1 Verify the login API, whether able to login 
+----------------------------------------------------------------------(src/test/resources/features/EcommerceAPI/EndtoEnd_E_commerce.feature; 1 Verify the login API, whether able to login)
+19:12:12.773 [main] INFO  utilities.BaseClass - List of header's: 
+{Content-Type=application/json}
+19:12:12.804 [main] INFO  utilities.BaseClass -     "userEmail": "{$userEmail}",
+19:12:12.804 [main] INFO  utilities.BaseClass -     "userPassword": "{$password}"
+19:12:12.804 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/api/ecom/auth/login
+19:12:25.689 [main] INFO  utilities.BaseClass - Rest Request: 
+{
+    "userEmail": "postman55@gmail.com",
+    "userPassword": "Naidu@117"
+}
+
+19:12:25.705 [main] INFO  utilities.BaseClass - Response code: 200
+19:12:25.821 [main] INFO  utilities.BaseClass - Response: {
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2E5Y2RlMTAzODQxZTljOWE2MGQ0YjgiLCJ1c2VyRW1haWwiOiJwb3N0bWFuNTVAZ21haWwuY29tIiwidXNlck1vYmlsZSI6MTIzNDU2Nzg5MCwidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc0NzMxNjU0MCwiZXhwIjoxNzc4ODc0MTQwfQ.2VrfR7MdukbMP3aDnryhq1ii-wV9GcSQXjLwCuMuXLY",
+    "userId": "63a9cde103841e9c9a60d4b8",
+    "message": "Login Successfully"
+}
+19:12:27.114 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 1 Verify the login API, whether able to login 
+----------------------------------------------------------------------
+19:12:27.114 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+19:12:27.114 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:16, Result:PASSED, Feature:EndtoEnd_E_commerce.feature, StartTime:2025-05-15T19:12:10.210+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+19:12:27.521 [main] ERROR factory.DBConnection - Error in connecting to the database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+19:12:27.536 [main] INFO  factory.DBConnection - Execution of the query: 'INSERT INTO Auto_Run_Dtls (Run_Id, Run_Region, Scenario, Feature, Module, Run_Date, Duration, Status, Failure_Cause)  
+VALUES ((Select MAX(Run_id) from Auto_Run_Stat), 'QA', '1 Verify the login API, whether able to login', 'EndtoEnd_E_commerce.feature', 'EcommerceAPI', '2025-05-15', 16, 'PASSED', '')' is successful with number of rows updated: 0
+19:12:27.755 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+19:12:27.755 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 2 Verify the Product API, whether able to create a new product 
+----------------------------------------------------------------------(src/test/resources/features/EcommerceAPI/EndtoEnd_E_commerce.feature; 2 Verify the Product API, whether able to create a new product)
+19:12:27.771 [main] INFO  utilities.BaseClass - List of header's: 
+{Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2E5Y2RlMTAzODQxZTljOWE2MGQ0YjgiLCJ1c2VyRW1haWwiOiJwb3N0bWFuNTVAZ21haWwuY29tIiwidXNlck1vYmlsZSI6MTIzNDU2Nzg5MCwidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc0NzMxNjU0MCwiZXhwIjoxNzc4ODc0MTQwfQ.2VrfR7MdukbMP3aDnryhq1ii-wV9GcSQXjLwCuMuXLY, Content-Type=multipart/form-data}
+19:12:27.786 [main] ERROR Loader.class - Global value for key 'productImage-file' is null
+19:12:27.802 [main] INFO  utilities.BaseClass - List of form-data: 
+{productImage-file=./src/test/resources/images/productImage.jpg, productSubCategory=shirts, productFor=women, productName=T-shirt_191, productPrice=1500, productDescription=Addias Originals, productAddedBy=63a9cde103841e9c9a60d4b8, productCategory=fashion}
+19:12:27.802 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/api/ecom/product/add-product
+19:12:29.802 [main] INFO  utilities.BaseClass - Response code: 201
+19:12:29.818 [main] INFO  utilities.BaseClass - Response: {
+    "productId": "6825ef44fd2af1c99e22df3c",
+    "message": "Product Added Successfully"
+}
+19:12:29.880 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 2 Verify the Product API, whether able to create a new product 
+----------------------------------------------------------------------
+19:12:29.880 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+19:12:29.880 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:2, Result:PASSED, Feature:EndtoEnd_E_commerce.feature, StartTime:2025-05-15T19:12:27.739+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+19:12:29.880 [main] ERROR factory.DBConnection - Error in connecting to the database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+19:12:29.880 [main] INFO  factory.DBConnection - Execution of the query: 'INSERT INTO Auto_Run_Dtls (Run_Id, Run_Region, Scenario, Feature, Module, Run_Date, Duration, Status, Failure_Cause)  
+VALUES ((Select MAX(Run_id) from Auto_Run_Stat), 'QA', '2 Verify the Product API, whether able to create a new product', 'EndtoEnd_E_commerce.feature', 'EcommerceAPI', '2025-05-15', 2, 'PASSED', '')' is successful with number of rows updated: 0
+19:12:29.943 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+19:12:29.943 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 3 Verify the Order API, whether able to create a new order 
+----------------------------------------------------------------------(src/test/resources/features/EcommerceAPI/EndtoEnd_E_commerce.feature; 3 Verify the Order API, whether able to create a new order)
+19:12:29.958 [main] INFO  utilities.BaseClass - List of header's: 
+{Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2E5Y2RlMTAzODQxZTljOWE2MGQ0YjgiLCJ1c2VyRW1haWwiOiJwb3N0bWFuNTVAZ21haWwuY29tIiwidXNlck1vYmlsZSI6MTIzNDU2Nzg5MCwidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc0NzMxNjU0MCwiZXhwIjoxNzc4ODc0MTQwfQ.2VrfR7MdukbMP3aDnryhq1ii-wV9GcSQXjLwCuMuXLY, Content-Type=application/json}
+19:12:29.958 [main] INFO  utilities.BaseClass -             "country": "{$country}",
+19:12:29.958 [main] INFO  utilities.BaseClass -             "productOrderedId": "{$productId}"
+19:12:29.958 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/api/ecom/order/create-order
+19:12:30.380 [main] INFO  utilities.BaseClass - Rest Request: 
+{
+    "orders": [
+        {
+            "country": "India",
+            "productOrderedId": "6825ef44fd2af1c99e22df3c"
+        }
+    ]
+}
+
+19:12:30.396 [main] INFO  utilities.BaseClass - Response code: 201
+19:12:30.396 [main] INFO  utilities.BaseClass - Response: {
+    "orders": [
+        "6825ef45fd2af1c99e22df44"
+    ],
+    "productOrderId": [
+        "6825ef44fd2af1c99e22df3c"
+    ],
+    "message": "Order Placed Successfully"
+}
+19:12:30.583 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 3 Verify the Order API, whether able to create a new order 
+----------------------------------------------------------------------
+19:12:30.583 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+19:12:30.583 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:0, Result:PASSED, Feature:EndtoEnd_E_commerce.feature, StartTime:2025-05-15T19:12:29.911+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+19:12:30.583 [main] ERROR factory.DBConnection - Error in connecting to the database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+19:12:30.583 [main] INFO  factory.DBConnection - Execution of the query: 'INSERT INTO Auto_Run_Dtls (Run_Id, Run_Region, Scenario, Feature, Module, Run_Date, Duration, Status, Failure_Cause)  
+VALUES ((Select MAX(Run_id) from Auto_Run_Stat), 'QA', '3 Verify the Order API, whether able to create a new order', 'EndtoEnd_E_commerce.feature', 'EcommerceAPI', '2025-05-15', 0, 'PASSED', '')' is successful with number of rows updated: 0
+19:12:30.630 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+19:12:30.630 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 4 Verify the Order Detail API, whether able to fetch order details 
+----------------------------------------------------------------------(src/test/resources/features/EcommerceAPI/EndtoEnd_E_commerce.feature; 4 Verify the Order Detail API, whether able to fetch order details)
+19:12:30.646 [main] INFO  utilities.BaseClass - List of header's: 
+{Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2E5Y2RlMTAzODQxZTljOWE2MGQ0YjgiLCJ1c2VyRW1haWwiOiJwb3N0bWFuNTVAZ21haWwuY29tIiwidXNlck1vYmlsZSI6MTIzNDU2Nzg5MCwidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc0NzMxNjU0MCwiZXhwIjoxNzc4ODc0MTQwfQ.2VrfR7MdukbMP3aDnryhq1ii-wV9GcSQXjLwCuMuXLY, Content-Type=application/json}
+19:12:30.677 [main] INFO  utilities.BaseClass - List of query param's: 
+{id=6825ef45fd2af1c99e22df44}
+19:12:30.677 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/api/ecom/order/get-orders-details
+19:12:33.177 [main] INFO  utilities.BaseClass - Response code: 200
+19:12:33.177 [main] INFO  utilities.BaseClass - Response: {
+    "data": {
+        "_id": "6825ef45fd2af1c99e22df44",
+        "orderById": "63a9cde103841e9c9a60d4b8",
+        "orderBy": "postman55@gmail.com",
+        "productOrderedId": "6825ef44fd2af1c99e22df3c",
+        "productName": "T-shirt_191",
+        "country": "India",
+        "productDescription": "Addias Originals",
+        "productImage": "https://rahulshettyacademy.com/api/ecom/uploads/productImage_1747316548388.jpg",
+        "orderPrice": "1500",
+        "__v": 0
+    },
+    "message": "Orders fetched for customer Successfully"
+}
+19:12:33.302 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 4 Verify the Order Detail API, whether able to fetch order details 
+----------------------------------------------------------------------
+19:12:33.302 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+19:12:33.302 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:2, Result:PASSED, Feature:EndtoEnd_E_commerce.feature, StartTime:2025-05-15T19:12:30.614+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+19:12:33.318 [main] ERROR factory.DBConnection - Error in connecting to the database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+19:12:33.318 [main] INFO  factory.DBConnection - Execution of the query: 'INSERT INTO Auto_Run_Dtls (Run_Id, Run_Region, Scenario, Feature, Module, Run_Date, Duration, Status, Failure_Cause)  
+VALUES ((Select MAX(Run_id) from Auto_Run_Stat), 'QA', '4 Verify the Order Detail API, whether able to fetch order details', 'EndtoEnd_E_commerce.feature', 'EcommerceAPI', '2025-05-15', 2, 'PASSED', '')' is successful with number of rows updated: 0
+19:12:33.396 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+19:12:33.396 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 5 Verify the Order Delete API, whether able to delete order 
+----------------------------------------------------------------------(src/test/resources/features/EcommerceAPI/EndtoEnd_E_commerce.feature; 5 Verify the Order Delete API, whether able to delete order)
+19:12:33.411 [main] INFO  utilities.BaseClass - List of header's: 
+{Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2E5Y2RlMTAzODQxZTljOWE2MGQ0YjgiLCJ1c2VyRW1haWwiOiJwb3N0bWFuNTVAZ21haWwuY29tIiwidXNlck1vYmlsZSI6MTIzNDU2Nzg5MCwidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc0NzMxNjU0MCwiZXhwIjoxNzc4ODc0MTQwfQ.2VrfR7MdukbMP3aDnryhq1ii-wV9GcSQXjLwCuMuXLY, Content-Type=application/json}
+19:12:33.427 [main] INFO  utilities.BaseClass - List of path param's: 
+{OrderId=6825ef45fd2af1c99e22df44}
+19:12:33.427 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/api/ecom/order/delete-order/{OrderId}
+19:12:33.724 [main] INFO  utilities.BaseClass - Response code: 200
+19:12:33.724 [main] INFO  utilities.BaseClass - Response: {
+    "message": "Orders Deleted Successfully"
+}
+19:12:33.739 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 5 Verify the Order Delete API, whether able to delete order 
+----------------------------------------------------------------------
+19:12:33.739 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+19:12:33.739 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:0, Result:PASSED, Feature:EndtoEnd_E_commerce.feature, StartTime:2025-05-15T19:12:33.380+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+19:12:33.755 [main] ERROR factory.DBConnection - Error in connecting to the database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+19:12:33.755 [main] INFO  factory.DBConnection - Execution of the query: 'INSERT INTO Auto_Run_Dtls (Run_Id, Run_Region, Scenario, Feature, Module, Run_Date, Duration, Status, Failure_Cause)  
+VALUES ((Select MAX(Run_id) from Auto_Run_Stat), 'QA', '5 Verify the Order Delete API, whether able to delete order', 'EndtoEnd_E_commerce.feature', 'EcommerceAPI', '2025-05-15', 0, 'PASSED', '')' is successful with number of rows updated: 0
+19:12:33.802 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+19:12:33.802 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 6 Verify the Product Delete API, whether able to delete product 
+----------------------------------------------------------------------(src/test/resources/features/EcommerceAPI/EndtoEnd_E_commerce.feature; 6 Verify the Product Delete API, whether able to delete product)
+19:12:33.818 [main] INFO  utilities.BaseClass - List of header's: 
+{Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2E5Y2RlMTAzODQxZTljOWE2MGQ0YjgiLCJ1c2VyRW1haWwiOiJwb3N0bWFuNTVAZ21haWwuY29tIiwidXNlck1vYmlsZSI6MTIzNDU2Nzg5MCwidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc0NzMxNjU0MCwiZXhwIjoxNzc4ODc0MTQwfQ.2VrfR7MdukbMP3aDnryhq1ii-wV9GcSQXjLwCuMuXLY, Content-Type=application/json}
+19:12:33.818 [main] INFO  utilities.BaseClass - List of path param's: 
+{productId=6825ef44fd2af1c99e22df3c}
+19:12:33.833 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/api/ecom/product/delete-product/{productId}
+19:12:34.146 [main] INFO  utilities.BaseClass - Response code: 200
+19:12:34.146 [main] INFO  utilities.BaseClass - Response: {
+    "message": "Product Deleted Successfully"
+}
+19:12:34.177 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 6 Verify the Product Delete API, whether able to delete product 
+----------------------------------------------------------------------
+19:12:34.177 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+19:12:34.177 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:0, Result:PASSED, Feature:EndtoEnd_E_commerce.feature, StartTime:2025-05-15T19:12:33.786+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+19:12:34.193 [main] ERROR factory.DBConnection - Error in connecting to the database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+19:12:34.193 [main] INFO  factory.DBConnection - Execution of the query: 'INSERT INTO Auto_Run_Dtls (Run_Id, Run_Region, Scenario, Feature, Module, Run_Date, Duration, Status, Failure_Cause)  
+VALUES ((Select MAX(Run_id) from Auto_Run_Stat), 'QA', '6 Verify the Product Delete API, whether able to delete product', 'EndtoEnd_E_commerce.feature', 'EcommerceAPI', '2025-05-15', 0, 'PASSED', '')' is successful with number of rows updated: 0
+19:12:34.224 [main] INFO  utilities.MyCustomListener - Global & Input values are cleared before feature started: placeValidations.feature
+19:12:34.255 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+19:12:34.255 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 1 Verify if place being successfully added using AddPlaceAPI 
+----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 1 Verify if place being successfully added using AddPlaceAPI)
+19:12:34.271 [main] INFO  utilities.BaseClass - List of header's: 
+{Accept=*/*, Content-Type=application/json}
+19:12:34.271 [main] INFO  utilities.BaseClass - List of query param's: 
+{key=qaclick123}
+19:12:34.286 [main] INFO  utilities.BaseClass -     "lat": {$latitude},
+19:12:34.286 [main] INFO  utilities.BaseClass -     "lng": {$longitude}
+19:12:34.286 [main] INFO  utilities.BaseClass -   "name": "{$name}",
+19:12:34.286 [main] INFO  utilities.BaseClass -   "address": "{$address}",
+19:12:34.286 [main] INFO  utilities.BaseClass -     "{$side layout}"
+19:12:34.286 [main] INFO  utilities.BaseClass -   "language": "{$language}"
+19:12:34.286 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/add/json
+19:12:34.568 [main] INFO  utilities.BaseClass - Rest Request: 
+{
+  "location": {
+    "lat": -31.388192,
+    "lng": 37.589062
+  },
+  "accuracy": 50,
+  "name": "atest",
+  "phone_number": "(+91) 983 893 3937",
+  "address": "Maratahalli, Bangalore",
+  "types": [
+    "shoe park",
+    "shop"
+  ],
+  "website": "http://google.com",
+  "language": "India-IND"
+}
+
+19:12:34.583 [main] INFO  utilities.BaseClass - Response code: 200
+19:12:34.583 [main] INFO  utilities.BaseClass - Response: {
+    "status": "OK",
+    "place_id": "7bf58f4328c28d08a4f2e5971a0d9a01",
+    "scope": "APP",
+    "reference": "cea2c978c766718233468c2407d435c6cea2c978c766718233468c2407d435c6",
+    "id": "cea2c978c766718233468c2407d435c6"
+}
+19:12:34.708 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 1 Verify if place being successfully added using AddPlaceAPI 
+----------------------------------------------------------------------
+19:12:34.708 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+19:12:34.708 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:0, Result:PASSED, Feature:placeValidations.feature, StartTime:2025-05-15T19:12:34.239+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+19:12:34.724 [main] ERROR factory.DBConnection - Error in connecting to the database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+19:12:34.724 [main] INFO  factory.DBConnection - Execution of the query: 'INSERT INTO Auto_Run_Dtls (Run_Id, Run_Region, Scenario, Feature, Module, Run_Date, Duration, Status, Failure_Cause)  
+VALUES ((Select MAX(Run_id) from Auto_Run_Stat), 'QA', '1 Verify if place being successfully added using AddPlaceAPI', 'placeValidations.feature', 'GoogleAPI', '2025-05-15', 0, 'PASSED', '')' is successful with number of rows updated: 0
+19:12:34.755 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+19:12:34.755 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 2 Verify if place details fetching successfully by GetPlaceAPI 
+----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 2 Verify if place details fetching successfully by GetPlaceAPI)
+19:12:34.771 [main] INFO  utilities.BaseClass - List of query param's: 
+{key=qaclick123, place_id=7bf58f4328c28d08a4f2e5971a0d9a01}
+19:12:34.786 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/get/json
+19:12:37.630 [main] INFO  utilities.BaseClass - Response code: 200
+19:12:37.646 [main] INFO  utilities.BaseClass - Response: {
+    "location": {
+        "latitude": "-31.388192",
+        "longitude": "37.589062"
+    },
+    "accuracy": "50",
+    "name": "atest",
+    "phone_number": "(+91) 983 893 3937",
+    "address": "Maratahalli, Bangalore",
+    "types": "shoe park,shop",
+    "website": "http://google.com",
+    "language": "India-IND"
+}
+19:12:37.693 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 2 Verify if place details fetching successfully by GetPlaceAPI 
+----------------------------------------------------------------------
+19:12:37.693 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+19:12:37.693 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:2, Result:PASSED, Feature:placeValidations.feature, StartTime:2025-05-15T19:12:34.755+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+19:12:37.708 [main] ERROR factory.DBConnection - Error in connecting to the database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+19:12:37.708 [main] INFO  factory.DBConnection - Execution of the query: 'INSERT INTO Auto_Run_Dtls (Run_Id, Run_Region, Scenario, Feature, Module, Run_Date, Duration, Status, Failure_Cause)  
+VALUES ((Select MAX(Run_id) from Auto_Run_Stat), 'QA', '2 Verify if place details fetching successfully by GetPlaceAPI', 'placeValidations.feature', 'GoogleAPI', '2025-05-15', 2, 'PASSED', '')' is successful with number of rows updated: 0
+19:12:37.755 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+19:12:37.755 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 3 Verify if place details fetching successfully by UpdatePlaceAPI 
+----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 3 Verify if place details fetching successfully by UpdatePlaceAPI)
+19:12:37.755 [main] INFO  utilities.BaseClass - List of query param's: 
+{key=qaclick123}
+19:12:37.771 [main] INFO  utilities.BaseClass - "place_id":"{$place_id}",
+19:12:37.771 [main] INFO  utilities.BaseClass - "address":"{$address}",
+19:12:37.771 [main] INFO  utilities.BaseClass - "key":"{$key}"
+19:12:37.771 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/update/json
+19:12:39.786 [main] INFO  utilities.BaseClass - Rest Request: 
+{
+"place_id":"7bf58f4328c28d08a4f2e5971a0d9a01",
+"address":"HSR Layout",
+"key":"qaclick123"
+}
+
+19:12:39.802 [main] INFO  utilities.BaseClass - Response code: 200
+19:12:39.802 [main] INFO  utilities.BaseClass - Response: {
+    "msg": "Address successfully updated"
+}
+19:12:39.818 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 3 Verify if place details fetching successfully by UpdatePlaceAPI 
+----------------------------------------------------------------------
+19:12:39.818 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+19:12:39.818 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:2, Result:PASSED, Feature:placeValidations.feature, StartTime:2025-05-15T19:12:37.739+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+19:12:39.849 [main] ERROR factory.DBConnection - Error in connecting to the database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+19:12:39.849 [main] INFO  factory.DBConnection - Execution of the query: 'INSERT INTO Auto_Run_Dtls (Run_Id, Run_Region, Scenario, Feature, Module, Run_Date, Duration, Status, Failure_Cause)  
+VALUES ((Select MAX(Run_id) from Auto_Run_Stat), 'QA', '3 Verify if place details fetching successfully by UpdatePlaceAPI', 'placeValidations.feature', 'GoogleAPI', '2025-05-15', 2, 'PASSED', '')' is successful with number of rows updated: 0
+19:12:39.880 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+19:12:39.880 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 4 Verify if place details fetching successfully by DeletePlaceAPI 
+----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 4 Verify if place details fetching successfully by DeletePlaceAPI)
+19:12:39.880 [main] INFO  utilities.BaseClass - List of query param's: 
+{key=qaclick123}
+19:12:39.896 [main] INFO  utilities.BaseClass -     "place_id":"{$place_id}"
+19:12:39.896 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/delete/json
+19:12:41.881 [main] INFO  utilities.BaseClass - Rest Request: 
+{
+    "place_id":"7bf58f4328c28d08a4f2e5971a0d9a01"
+}
+
+19:12:41.897 [main] INFO  utilities.BaseClass - Response code: 200
+19:12:41.897 [main] INFO  utilities.BaseClass - Response: {
+    "status": "OK"
+}
+19:12:41.928 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 4 Verify if place details fetching successfully by DeletePlaceAPI 
+----------------------------------------------------------------------
+19:12:41.928 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+19:12:41.928 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:2, Result:PASSED, Feature:placeValidations.feature, StartTime:2025-05-15T19:12:39.864+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+19:12:41.959 [main] ERROR factory.DBConnection - Error in connecting to the database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+19:12:41.959 [main] INFO  factory.DBConnection - Execution of the query: 'INSERT INTO Auto_Run_Dtls (Run_Id, Run_Region, Scenario, Feature, Module, Run_Date, Duration, Status, Failure_Cause)  
+VALUES ((Select MAX(Run_id) from Auto_Run_Stat), 'QA', '4 Verify if place details fetching successfully by DeletePlaceAPI', 'placeValidations.feature', 'GoogleAPI', '2025-05-15', 2, 'PASSED', '')' is successful with number of rows updated: 0
+19:12:41.975 [main] INFO  stepDefinitions.Hooks - ===================== Run Statistics =====================
+19:12:41.975 [main] INFO  stepDefinitions.Hooks - Automation Suit Completed on QA environment
+19:12:41.975 [main] INFO  utilities.MyCustomListener - Automation Suite Finished at: 2025-05-15 19:12:41
+19:12:41.975 [main] INFO  utilities.MyCustomListener - Run Duration: 0h 0m 32s
+19:12:41.975 [main] INFO  utilities.MyCustomListener - Run status: PASSED
+19:20:05.609 [main] INFO  factory.ReadConfigFiles - configuration properties loaded successfully from: E:\IntelliJ_Workspace\RestAssured_Cucumber_SerenityReports//configure.properties
+19:20:05.628 [main] INFO  factory.ReadConfigFiles - API endpoints properties loaded successfully from: E:\IntelliJ_Workspace\RestAssured_Cucumber_SerenityReports//src//test//resources//properties//restAPIDetails.properties
+19:20:05.629 [main] INFO  stepDefinitions.Hooks - Automation Suit Started on QA environment
+19:20:06.848 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+19:20:06.849 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 1 Verify if place being successfully added using AddPlaceAPI 
+----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 1 Verify if place being successfully added using AddPlaceAPI)
+19:20:08.992 [main] INFO  utilities.BaseClass - List of header's: 
+{Accept=*/*, Content-Type=application/json}
+19:20:09.032 [main] INFO  utilities.BaseClass - List of query param's: 
+{key=qaclick123}
+19:20:09.039 [main] INFO  utilities.BaseClass -     "lat": {$latitude},
+19:20:09.040 [main] INFO  utilities.BaseClass -     "lng": {$longitude}
+19:20:09.044 [main] INFO  utilities.BaseClass -   "name": "{$name}",
+19:20:09.044 [main] INFO  utilities.BaseClass -   "address": "{$address}",
+19:20:09.044 [main] INFO  utilities.BaseClass -     "{$side layout}"
+19:20:09.045 [main] INFO  utilities.BaseClass -   "language": "{$language}"
+19:20:09.046 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/add/json
+19:20:12.736 [main] INFO  utilities.BaseClass - Rest Request: 
+{
+  "location": {
+    "lat": -31.388192,
+    "lng": 37.589062
+  },
+  "accuracy": 50,
+  "name": "atest",
+  "phone_number": "(+91) 983 893 3937",
+  "address": "Maratahalli, Bangalore",
+  "types": [
+    "shoe park",
+    "shop"
+  ],
+  "website": "http://google.com",
+  "language": "India-IND"
+}
+
+19:20:12.736 [main] INFO  utilities.BaseClass - Response code: 200
+19:20:12.876 [main] INFO  utilities.BaseClass - Response: {
+    "status": "OK",
+    "place_id": "6d5ae330ee46605053cdd64d4afd4715",
+    "scope": "APP",
+    "reference": "435f896a25132bcdfbd590ea8db9a018435f896a25132bcdfbd590ea8db9a018",
+    "id": "435f896a25132bcdfbd590ea8db9a018"
+}
+19:20:14.832 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 1 Verify if place being successfully added using AddPlaceAPI 
+----------------------------------------------------------------------
+19:20:14.832 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+19:20:14.876 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+19:20:14.876 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 2 Verify if place details fetching successfully by GetPlaceAPI 
+----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 2 Verify if place details fetching successfully by GetPlaceAPI)
+19:20:14.881 [main] INFO  utilities.BaseClass - List of query param's: 
+{key=qaclick123, place_id=6d5ae330ee46605053cdd64d4afd4715}
+19:20:14.881 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/get/json
+19:20:16.311 [main] INFO  utilities.BaseClass - Response code: 200
+19:20:16.314 [main] INFO  utilities.BaseClass - Response: {
+    "location": {
+        "latitude": "-31.388192",
+        "longitude": "37.589062"
+    },
+    "accuracy": "50",
+    "name": "atest",
+    "phone_number": "(+91) 983 893 3937",
+    "address": "Maratahalli, Bangalore",
+    "types": "shoe park,shop",
+    "website": "http://google.com",
+    "language": "India-IND"
+}
+19:20:16.579 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 2 Verify if place details fetching successfully by GetPlaceAPI 
+----------------------------------------------------------------------
+19:20:16.579 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+19:20:16.716 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+19:20:16.716 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 3 Verify if place details fetching successfully by UpdatePlaceAPI 
+----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 3 Verify if place details fetching successfully by UpdatePlaceAPI)
+19:20:16.875 [main] INFO  utilities.BaseClass - List of query param's: 
+{key=qaclick123}
+19:20:16.876 [main] INFO  utilities.BaseClass - "place_id":"{$place_id}",
+19:20:16.876 [main] INFO  utilities.BaseClass - "address":"{$address}",
+19:20:16.876 [main] INFO  utilities.BaseClass - "key":"{$key}"
+19:20:16.876 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/update/json
+19:20:18.841 [main] INFO  utilities.BaseClass - Rest Request: 
+{
+"place_id":"6d5ae330ee46605053cdd64d4afd4715",
+"address":"HSR Layout",
+"key":"qaclick123"
+}
+
+19:20:18.841 [main] INFO  utilities.BaseClass - Response code: 200
+19:20:18.841 [main] INFO  utilities.BaseClass - Response: {
+    "msg": "Address successfully updated"
+}
+19:20:18.856 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 3 Verify if place details fetching successfully by UpdatePlaceAPI 
+----------------------------------------------------------------------
+19:20:18.856 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+19:20:18.872 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+19:20:18.872 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 4 Verify if place details fetching successfully by DeletePlaceAPI 
+----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 4 Verify if place details fetching successfully by DeletePlaceAPI)
+19:20:18.888 [main] INFO  utilities.BaseClass - List of query param's: 
+{key=qaclick123}
+19:20:18.888 [main] INFO  utilities.BaseClass -     "place_id":"{$place_id}"
+19:20:18.888 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/delete/json
+19:20:20.936 [main] INFO  utilities.BaseClass - Rest Request: 
+{
+    "place_id":"6d5ae330ee46605053cdd64d4afd4715"
+}
+
+19:20:20.937 [main] INFO  utilities.BaseClass - Response code: 200
+19:20:20.938 [main] INFO  utilities.BaseClass - Response: {
+    "status": "OK"
+}
+19:20:20.952 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 4 Verify if place details fetching successfully by DeletePlaceAPI 
+----------------------------------------------------------------------
+19:20:20.961 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+19:20:20.965 [main] INFO  stepDefinitions.Hooks - ===================== Run Statistics =====================
+19:20:20.965 [main] INFO  stepDefinitions.Hooks - Automation Suit Completed on QA environment
+19:20:21.635 [main] INFO  utilities.MyCustomListener - 
+    _     __  __  _______   ___   ____   ____     _   _______  _   ___   ____    _                 
+   / \   | |  | ||__   __| / _ \ | |\ \ / /| |   / \ |__   __|| | / - \ | |\ \  | |    
+  / _ \  | |  | |   | |   | / \ || |  \_/  | |  / _ \   | |   | || / \ || | \ \ | |     
+ / ___ \ | \__/ |   | |   | \_/ || |       | | / --- \  | |   | || \_/ || |  \ \| |     
+/_/   \_\ \____/    |_|    \___/ |_|       |_|/_/   \_\ |_|   |_| \___/ |_|   \__/     
+--------------------------------------------------------------------------------------------
+19:20:21.636 [main] INFO  utilities.MyCustomListener - Automation Suite Started at: 2025-05-15 19:20:21
+19:20:21.652 [main] INFO  factory.ReadConfigFiles - configuration properties loaded successfully from: E:\IntelliJ_Workspace\RestAssured_Cucumber_SerenityReports//configure.properties
+19:20:21.653 [main] INFO  factory.ReadConfigFiles - API endpoints properties loaded successfully from: E:\IntelliJ_Workspace\RestAssured_Cucumber_SerenityReports//src//test//resources//properties//restAPIDetails.properties
+19:20:21.653 [main] INFO  stepDefinitions.Hooks - Automation Suit Started on QA environment
+19:20:21.654 [main] INFO  utilities.MyCustomListener - Global & Input values are cleared before feature started: placeValidations.feature
+19:20:22.366 [main] INFO  utilities.MyCustomListener - Global & Input values are cleared before feature started: placeValidations.feature
+19:20:22.527 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+19:20:22.527 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 1 Verify if place being successfully added using AddPlaceAPI 
+----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 1 Verify if place being successfully added using AddPlaceAPI)
+19:20:22.841 [main] INFO  utilities.BaseClass - List of header's: 
+{Accept=*/*, Content-Type=application/json}
+19:20:22.924 [main] INFO  utilities.BaseClass - List of query param's: 
+{key=qaclick123}
+19:20:22.940 [main] INFO  utilities.BaseClass -     "lat": {$latitude},
+19:20:22.940 [main] INFO  utilities.BaseClass -     "lng": {$longitude}
+19:20:22.940 [main] INFO  utilities.BaseClass -   "name": "{$name}",
+19:20:22.940 [main] INFO  utilities.BaseClass -   "address": "{$address}",
+19:20:22.940 [main] INFO  utilities.BaseClass -     "{$side layout}"
+19:20:22.940 [main] INFO  utilities.BaseClass -   "language": "{$language}"
+19:20:22.940 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/add/json
+19:20:23.065 [main] INFO  utilities.BaseClass - Rest Request: 
+{
+  "location": {
+    "lat": -31.388192,
+    "lng": 37.589062
+  },
+  "accuracy": 50,
+  "name": "atest",
+  "phone_number": "(+91) 983 893 3937",
+  "address": "Maratahalli, Bangalore",
+  "types": [
+    "shoe park",
+    "shop"
+  ],
+  "website": "http://google.com",
+  "language": "India-IND"
+}
+
+19:20:23.081 [main] INFO  utilities.BaseClass - Response code: 200
+19:20:23.081 [main] INFO  utilities.BaseClass - Response: {
+    "status": "OK",
+    "place_id": "c32e8fc99822eab985f13e9349a98d57",
+    "scope": "APP",
+    "reference": "322caf850847ebc1d1a745c6a0a4c010322caf850847ebc1d1a745c6a0a4c010",
+    "id": "322caf850847ebc1d1a745c6a0a4c010"
+}
+19:20:23.221 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 1 Verify if place being successfully added using AddPlaceAPI 
+----------------------------------------------------------------------
+19:20:23.221 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+19:20:23.221 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:0, Result:PASSED, Feature:placeValidations.feature, StartTime:2025-05-15T19:20:22.468+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+19:20:23.612 [main] ERROR factory.DBConnection - Error in connecting to the database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+19:20:23.612 [main] INFO  factory.DBConnection - Execution of the query: 'INSERT INTO Auto_Run_Dtls (Run_Id, Run_Region, Scenario, Feature, Module, Run_Date, Duration, Status, Failure_Cause)  
+VALUES ((Select MAX(Run_id) from Auto_Run_Stat), 'QA', '1 Verify if place being successfully added using AddPlaceAPI', 'placeValidations.feature', 'GoogleAPI', '2025-05-15', 0, 'PASSED', '')' is successful with number of rows updated: 0
+19:20:23.737 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+19:20:23.737 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 2 Verify if place details fetching successfully by GetPlaceAPI 
+----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 2 Verify if place details fetching successfully by GetPlaceAPI)
+19:20:23.753 [main] INFO  utilities.BaseClass - List of query param's: 
+{key=qaclick123, place_id=c32e8fc99822eab985f13e9349a98d57}
+19:20:23.768 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/get/json
+19:20:25.170 [main] INFO  utilities.BaseClass - Response code: 200
+19:20:25.170 [main] INFO  utilities.BaseClass - Response: {
+    "location": {
+        "latitude": "-31.388192",
+        "longitude": "37.589062"
+    },
+    "accuracy": "50",
+    "name": "atest",
+    "phone_number": "(+91) 983 893 3937",
+    "address": "Maratahalli, Bangalore",
+    "types": "shoe park,shop",
+    "website": "http://google.com",
+    "language": "India-IND"
+}
+19:20:25.232 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 2 Verify if place details fetching successfully by GetPlaceAPI 
+----------------------------------------------------------------------
+19:20:25.232 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+19:20:25.232 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:1, Result:PASSED, Feature:placeValidations.feature, StartTime:2025-05-15T19:20:23.706+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+19:20:25.232 [main] ERROR factory.DBConnection - Error in connecting to the database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+19:20:25.232 [main] INFO  factory.DBConnection - Execution of the query: 'INSERT INTO Auto_Run_Dtls (Run_Id, Run_Region, Scenario, Feature, Module, Run_Date, Duration, Status, Failure_Cause)  
+VALUES ((Select MAX(Run_id) from Auto_Run_Stat), 'QA', '2 Verify if place details fetching successfully by GetPlaceAPI', 'placeValidations.feature', 'GoogleAPI', '2025-05-15', 1, 'PASSED', '')' is successful with number of rows updated: 0
+19:20:25.279 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+19:20:25.279 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 3 Verify if place details fetching successfully by UpdatePlaceAPI 
+----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 3 Verify if place details fetching successfully by UpdatePlaceAPI)
+19:20:25.295 [main] INFO  utilities.BaseClass - List of query param's: 
+{key=qaclick123}
+19:20:25.295 [main] INFO  utilities.BaseClass - "place_id":"{$place_id}",
+19:20:25.295 [main] INFO  utilities.BaseClass - "address":"{$address}",
+19:20:25.295 [main] INFO  utilities.BaseClass - "key":"{$key}"
+19:20:25.295 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/update/json
+19:20:27.286 [main] INFO  utilities.BaseClass - Rest Request: 
+{
+"place_id":"c32e8fc99822eab985f13e9349a98d57",
+"address":"HSR Layout",
+"key":"qaclick123"
+}
+
+19:20:27.301 [main] INFO  utilities.BaseClass - Response code: 200
+19:20:27.301 [main] INFO  utilities.BaseClass - Response: {
+    "msg": "Address successfully updated"
+}
+19:20:27.332 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 3 Verify if place details fetching successfully by UpdatePlaceAPI 
+----------------------------------------------------------------------
+19:20:27.332 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+19:20:27.332 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:2, Result:PASSED, Feature:placeValidations.feature, StartTime:2025-05-15T19:20:25.264+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+19:20:27.366 [main] ERROR factory.DBConnection - Error in connecting to the database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+19:20:27.366 [main] INFO  factory.DBConnection - Execution of the query: 'INSERT INTO Auto_Run_Dtls (Run_Id, Run_Region, Scenario, Feature, Module, Run_Date, Duration, Status, Failure_Cause)  
+VALUES ((Select MAX(Run_id) from Auto_Run_Stat), 'QA', '3 Verify if place details fetching successfully by UpdatePlaceAPI', 'placeValidations.feature', 'GoogleAPI', '2025-05-15', 2, 'PASSED', '')' is successful with number of rows updated: 0
+19:20:27.515 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+19:20:27.515 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 4 Verify if place details fetching successfully by DeletePlaceAPI 
+----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 4 Verify if place details fetching successfully by DeletePlaceAPI)
+19:20:27.536 [main] INFO  utilities.BaseClass - List of query param's: 
+{key=qaclick123}
+19:20:27.638 [main] INFO  utilities.BaseClass -     "place_id":"{$place_id}"
+19:20:27.638 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/delete/json
+19:20:29.548 [main] INFO  utilities.BaseClass - Rest Request: 
+{
+    "place_id":"c32e8fc99822eab985f13e9349a98d57"
+}
+
+19:20:29.558 [main] INFO  utilities.BaseClass - Response code: 200
+19:20:29.566 [main] INFO  utilities.BaseClass - Response: {
+    "status": "OK"
+}
+19:20:29.616 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 4 Verify if place details fetching successfully by DeletePlaceAPI 
+----------------------------------------------------------------------
+19:20:29.616 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+19:20:29.618 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:2, Result:PASSED, Feature:placeValidations.feature, StartTime:2025-05-15T19:20:27.438+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+19:20:29.635 [main] ERROR factory.DBConnection - Error in connecting to the database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+19:20:29.635 [main] INFO  factory.DBConnection - Execution of the query: 'INSERT INTO Auto_Run_Dtls (Run_Id, Run_Region, Scenario, Feature, Module, Run_Date, Duration, Status, Failure_Cause)  
+VALUES ((Select MAX(Run_id) from Auto_Run_Stat), 'QA', '4 Verify if place details fetching successfully by DeletePlaceAPI', 'placeValidations.feature', 'GoogleAPI', '2025-05-15', 2, 'PASSED', '')' is successful with number of rows updated: 0
+19:20:29.719 [main] INFO  stepDefinitions.Hooks - ===================== Run Statistics =====================
+19:20:29.719 [main] INFO  stepDefinitions.Hooks - Automation Suit Completed on QA environment
+19:20:29.720 [main] INFO  utilities.MyCustomListener - Automation Suite Finished at: 2025-05-15 19:20:29
+19:20:29.720 [main] INFO  utilities.MyCustomListener - Run Duration: 0h 0m 8s
+19:20:29.720 [main] INFO  utilities.MyCustomListener - Run status: PASSED
+19:39:12.020 [main] INFO  utilities.MyCustomListener - 
+    _     __  __  _______   ___   ____   ____     _   _______  _   ___   ____    _                 
+   / \   | |  | ||__   __| / _ \ | |\ \ / /| |   / \ |__   __|| | / - \ | |\ \  | |    
+  / _ \  | |  | |   | |   | / \ || |  \_/  | |  / _ \   | |   | || / \ || | \ \ | |     
+ / ___ \ | \__/ |   | |   | \_/ || |       | | / --- \  | |   | || \_/ || |  \ \| |     
+/_/   \_\ \____/    |_|    \___/ |_|       |_|/_/   \_\ |_|   |_| \___/ |_|   \__/     
+--------------------------------------------------------------------------------------------
+19:39:12.035 [main] INFO  utilities.MyCustomListener - Automation Suite Started at: 2025-05-15 19:39:12
+19:39:12.126 [main] INFO  factory.ReadConfigFiles - configuration properties loaded successfully from: E:\IntelliJ_Workspace\RestAssured_Cucumber_SerenityReports//configure.properties
+19:39:12.127 [main] INFO  factory.ReadConfigFiles - API endpoints properties loaded successfully from: E:\IntelliJ_Workspace\RestAssured_Cucumber_SerenityReports//src//test//resources//properties//restAPIDetails.properties
+19:39:12.128 [main] INFO  stepDefinitions.Hooks - Automation Suit Started on QA environment
+19:39:12.142 [main] INFO  utilities.MyCustomListener - Global & Input values are cleared before feature started: EndtoEnd_E_commerce.feature
+19:39:12.561 [main] INFO  utilities.MyCustomListener - Global & Input values are cleared before feature started: placeValidations.feature
+19:39:12.591 [main] INFO  utilities.MyCustomListener - Global & Input values are cleared before feature started: EndtoEnd_E_commerce.feature
+19:39:13.743 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+19:39:13.744 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 1 Verify the login API, whether able to login 
+----------------------------------------------------------------------(src/test/resources/features/EcommerceAPI/EndtoEnd_E_commerce.feature; 1 Verify the login API, whether able to login)
+19:39:15.248 [main] INFO  utilities.BaseClass - List of header's: 
+{Content-Type=application/json}
+19:39:15.267 [main] INFO  utilities.BaseClass -     "userEmail": "{$userEmail}",
+19:39:15.268 [main] INFO  utilities.BaseClass -     "userPassword": "{$password}"
+19:39:15.268 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/api/ecom/auth/login
+19:39:17.725 [main] INFO  utilities.BaseClass - Rest Request: 
+{
+    "userEmail": "postman55@gmail.com",
+    "userPassword": "Naidu@117"
+}
+
+19:39:17.738 [main] INFO  utilities.BaseClass - Response code: 200
+19:39:17.837 [main] INFO  utilities.BaseClass - Response: {
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2E5Y2RlMTAzODQxZTljOWE2MGQ0YjgiLCJ1c2VyRW1haWwiOiJwb3N0bWFuNTVAZ21haWwuY29tIiwidXNlck1vYmlsZSI6MTIzNDU2Nzg5MCwidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc0NzMxODE1NywiZXhwIjoxNzc4ODc1NzU3fQ.N4KtRZEKsoPIuM8_i6889_jpcqfRff_LAXTgieK3zzA",
+    "userId": "63a9cde103841e9c9a60d4b8",
+    "message": "Login Successfully"
+}
+19:39:19.124 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 1 Verify the login API, whether able to login 
+----------------------------------------------------------------------
+19:39:19.124 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+19:39:19.126 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:6, Result:PASSED, Feature:EndtoEnd_E_commerce.feature, StartTime:2025-05-15T19:39:12.774+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+19:39:19.546 [main] ERROR factory.DBConnection - Error in connecting to the database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+19:39:19.551 [main] INFO  factory.DBConnection - Execution of the query: 'INSERT INTO Auto_Run_Dtls (Run_Id, Run_Region, Scenario, Feature, Module, Run_Date, Duration, Status, Failure_Cause)  
+VALUES ((Select MAX(Run_id) from Auto_Run_Stat), 'QA', '1 Verify the login API, whether able to login', 'EndtoEnd_E_commerce.feature', 'EcommerceAPI', '2025-05-15', 6, 'PASSED', '')' is successful with number of rows updated: 0
+19:39:19.643 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+19:39:19.644 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 2 Verify the Product API, whether able to create a new product 
+----------------------------------------------------------------------(src/test/resources/features/EcommerceAPI/EndtoEnd_E_commerce.feature; 2 Verify the Product API, whether able to create a new product)
+19:39:19.655 [main] INFO  utilities.BaseClass - List of header's: 
+{Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2E5Y2RlMTAzODQxZTljOWE2MGQ0YjgiLCJ1c2VyRW1haWwiOiJwb3N0bWFuNTVAZ21haWwuY29tIiwidXNlck1vYmlsZSI6MTIzNDU2Nzg5MCwidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc0NzMxODE1NywiZXhwIjoxNzc4ODc1NzU3fQ.N4KtRZEKsoPIuM8_i6889_jpcqfRff_LAXTgieK3zzA, Content-Type=multipart/form-data}
+19:39:19.665 [main] ERROR Loader.class - Global value for key 'productImage-file' is null
+19:39:19.685 [main] INFO  utilities.BaseClass - List of form-data: 
+{productImage-file=./src/test/resources/images/productImage.jpg, productSubCategory=shirts, productFor=women, productName=T-shirt_191, productPrice=1500, productDescription=Addias Originals, productAddedBy=63a9cde103841e9c9a60d4b8, productCategory=fashion}
+19:39:19.685 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/api/ecom/product/add-product
+19:39:20.247 [main] INFO  utilities.BaseClass - Response code: 201
+19:39:20.250 [main] INFO  utilities.BaseClass - Response: {
+    "productId": "6825f58ffd2af1c99e22ece0",
+    "message": "Product Added Successfully"
+}
+19:39:20.337 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 2 Verify the Product API, whether able to create a new product 
+----------------------------------------------------------------------
+19:39:20.337 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+19:39:20.338 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:0, Result:PASSED, Feature:EndtoEnd_E_commerce.feature, StartTime:2025-05-15T19:39:19.624+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+19:39:20.346 [main] ERROR factory.DBConnection - Error in connecting to the database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+19:39:20.346 [main] INFO  factory.DBConnection - Execution of the query: 'INSERT INTO Auto_Run_Dtls (Run_Id, Run_Region, Scenario, Feature, Module, Run_Date, Duration, Status, Failure_Cause)  
+VALUES ((Select MAX(Run_id) from Auto_Run_Stat), 'QA', '2 Verify the Product API, whether able to create a new product', 'EndtoEnd_E_commerce.feature', 'EcommerceAPI', '2025-05-15', 0, 'PASSED', '')' is successful with number of rows updated: 0
+19:39:20.415 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+19:39:20.415 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 3 Verify the Order API, whether able to create a new order 
+----------------------------------------------------------------------(src/test/resources/features/EcommerceAPI/EndtoEnd_E_commerce.feature; 3 Verify the Order API, whether able to create a new order)
+19:39:20.425 [main] INFO  utilities.BaseClass - List of header's: 
+{Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2E5Y2RlMTAzODQxZTljOWE2MGQ0YjgiLCJ1c2VyRW1haWwiOiJwb3N0bWFuNTVAZ21haWwuY29tIiwidXNlck1vYmlsZSI6MTIzNDU2Nzg5MCwidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc0NzMxODE1NywiZXhwIjoxNzc4ODc1NzU3fQ.N4KtRZEKsoPIuM8_i6889_jpcqfRff_LAXTgieK3zzA, Content-Type=application/json}
+19:39:20.436 [main] INFO  utilities.BaseClass -             "country": "{$country}",
+19:39:20.436 [main] INFO  utilities.BaseClass -             "productOrderedId": "{$productId}"
+19:39:20.436 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/api/ecom/order/create-order
+19:39:20.568 [main] INFO  utilities.BaseClass - Rest Request: 
+{
+    "orders": [
+        {
+            "country": "India",
+            "productOrderedId": "6825f58ffd2af1c99e22ece0"
+        }
+    ]
+}
+
+19:39:20.576 [main] INFO  utilities.BaseClass - Response code: 201
+19:39:20.578 [main] INFO  utilities.BaseClass - Response: {
+    "orders": [
+        "6825f590fd2af1c99e22ece4"
+    ],
+    "productOrderId": [
+        "6825f58ffd2af1c99e22ece0"
+    ],
+    "message": "Order Placed Successfully"
+}
+19:39:20.750 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 3 Verify the Order API, whether able to create a new order 
+----------------------------------------------------------------------
+19:39:20.751 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+19:39:20.751 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:0, Result:PASSED, Feature:EndtoEnd_E_commerce.feature, StartTime:2025-05-15T19:39:20.389+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+19:39:20.763 [main] ERROR factory.DBConnection - Error in connecting to the database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+19:39:20.763 [main] INFO  factory.DBConnection - Execution of the query: 'INSERT INTO Auto_Run_Dtls (Run_Id, Run_Region, Scenario, Feature, Module, Run_Date, Duration, Status, Failure_Cause)  
+VALUES ((Select MAX(Run_id) from Auto_Run_Stat), 'QA', '3 Verify the Order API, whether able to create a new order', 'EndtoEnd_E_commerce.feature', 'EcommerceAPI', '2025-05-15', 0, 'PASSED', '')' is successful with number of rows updated: 0
+19:39:20.820 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+19:39:20.820 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 4 Verify the Order Detail API, whether able to fetch order details 
+----------------------------------------------------------------------(src/test/resources/features/EcommerceAPI/EndtoEnd_E_commerce.feature; 4 Verify the Order Detail API, whether able to fetch order details)
+19:39:20.834 [main] INFO  utilities.BaseClass - List of header's: 
+{Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2E5Y2RlMTAzODQxZTljOWE2MGQ0YjgiLCJ1c2VyRW1haWwiOiJwb3N0bWFuNTVAZ21haWwuY29tIiwidXNlck1vYmlsZSI6MTIzNDU2Nzg5MCwidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc0NzMxODE1NywiZXhwIjoxNzc4ODc1NzU3fQ.N4KtRZEKsoPIuM8_i6889_jpcqfRff_LAXTgieK3zzA, Content-Type=application/json}
+19:39:20.867 [main] INFO  utilities.BaseClass - List of query param's: 
+{id=6825f590fd2af1c99e22ece4}
+19:39:20.875 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/api/ecom/order/get-orders-details
+19:39:21.057 [main] INFO  utilities.BaseClass - Response code: 200
+19:39:21.059 [main] INFO  utilities.BaseClass - Response: {
+    "data": {
+        "_id": "6825f590fd2af1c99e22ece4",
+        "orderById": "63a9cde103841e9c9a60d4b8",
+        "orderBy": "postman55@gmail.com",
+        "productOrderedId": "6825f58ffd2af1c99e22ece0",
+        "productName": "T-shirt_191",
+        "country": "India",
+        "productDescription": "Addias Originals",
+        "productImage": "https://rahulshettyacademy.com/api/ecom/uploads/productImage_1747318159708.jpg",
+        "orderPrice": "1500",
+        "__v": 0
+    },
+    "message": "Orders fetched for customer Successfully"
+}
+19:39:21.140 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 4 Verify the Order Detail API, whether able to fetch order details 
+----------------------------------------------------------------------
+19:39:21.140 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+19:39:21.141 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:0, Result:PASSED, Feature:EndtoEnd_E_commerce.feature, StartTime:2025-05-15T19:39:20.807+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+19:39:21.153 [main] ERROR factory.DBConnection - Error in connecting to the database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+19:39:21.153 [main] INFO  factory.DBConnection - Execution of the query: 'INSERT INTO Auto_Run_Dtls (Run_Id, Run_Region, Scenario, Feature, Module, Run_Date, Duration, Status, Failure_Cause)  
+VALUES ((Select MAX(Run_id) from Auto_Run_Stat), 'QA', '4 Verify the Order Detail API, whether able to fetch order details', 'EndtoEnd_E_commerce.feature', 'EcommerceAPI', '2025-05-15', 0, 'PASSED', '')' is successful with number of rows updated: 0
+19:39:21.219 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+19:39:21.220 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 5 Verify the Order Delete API, whether able to delete order 
+----------------------------------------------------------------------(src/test/resources/features/EcommerceAPI/EndtoEnd_E_commerce.feature; 5 Verify the Order Delete API, whether able to delete order)
+19:39:21.231 [main] INFO  utilities.BaseClass - List of header's: 
+{Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2E5Y2RlMTAzODQxZTljOWE2MGQ0YjgiLCJ1c2VyRW1haWwiOiJwb3N0bWFuNTVAZ21haWwuY29tIiwidXNlck1vYmlsZSI6MTIzNDU2Nzg5MCwidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc0NzMxODE1NywiZXhwIjoxNzc4ODc1NzU3fQ.N4KtRZEKsoPIuM8_i6889_jpcqfRff_LAXTgieK3zzA, Content-Type=application/json}
+19:39:21.239 [main] INFO  utilities.BaseClass - List of path param's: 
+{OrderId=6825f590fd2af1c99e22ece4}
+19:39:21.245 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/api/ecom/order/delete-order/{OrderId}
+19:39:21.432 [main] INFO  utilities.BaseClass - Response code: 200
+19:39:21.434 [main] INFO  utilities.BaseClass - Response: {
+    "message": "Orders Deleted Successfully"
+}
+19:39:21.462 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 5 Verify the Order Delete API, whether able to delete order 
+----------------------------------------------------------------------
+19:39:21.462 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+19:39:21.463 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:0, Result:PASSED, Feature:EndtoEnd_E_commerce.feature, StartTime:2025-05-15T19:39:21.203+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+19:39:21.476 [main] ERROR factory.DBConnection - Error in connecting to the database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+19:39:21.476 [main] INFO  factory.DBConnection - Execution of the query: 'INSERT INTO Auto_Run_Dtls (Run_Id, Run_Region, Scenario, Feature, Module, Run_Date, Duration, Status, Failure_Cause)  
+VALUES ((Select MAX(Run_id) from Auto_Run_Stat), 'QA', '5 Verify the Order Delete API, whether able to delete order', 'EndtoEnd_E_commerce.feature', 'EcommerceAPI', '2025-05-15', 0, 'PASSED', '')' is successful with number of rows updated: 0
+19:39:21.524 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+19:39:21.524 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 6 Verify the Product Delete API, whether able to delete product 
+----------------------------------------------------------------------(src/test/resources/features/EcommerceAPI/EndtoEnd_E_commerce.feature; 6 Verify the Product Delete API, whether able to delete product)
+19:39:21.533 [main] INFO  utilities.BaseClass - List of header's: 
+{Authorization=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2E5Y2RlMTAzODQxZTljOWE2MGQ0YjgiLCJ1c2VyRW1haWwiOiJwb3N0bWFuNTVAZ21haWwuY29tIiwidXNlck1vYmlsZSI6MTIzNDU2Nzg5MCwidXNlclJvbGUiOiJjdXN0b21lciIsImlhdCI6MTc0NzMxODE1NywiZXhwIjoxNzc4ODc1NzU3fQ.N4KtRZEKsoPIuM8_i6889_jpcqfRff_LAXTgieK3zzA, Content-Type=application/json}
+19:39:21.540 [main] INFO  utilities.BaseClass - List of path param's: 
+{productId=6825f58ffd2af1c99e22ece0}
+19:39:21.547 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/api/ecom/product/delete-product/{productId}
+19:39:21.698 [main] INFO  utilities.BaseClass - Response code: 200
+19:39:21.700 [main] INFO  utilities.BaseClass - Response: {
+    "message": "Product Deleted Successfully"
+}
+19:39:21.725 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 6 Verify the Product Delete API, whether able to delete product 
+----------------------------------------------------------------------
+19:39:21.725 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+19:39:21.726 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:0, Result:PASSED, Feature:EndtoEnd_E_commerce.feature, StartTime:2025-05-15T19:39:21.504+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+19:39:21.741 [main] ERROR factory.DBConnection - Error in connecting to the database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+19:39:21.741 [main] INFO  factory.DBConnection - Execution of the query: 'INSERT INTO Auto_Run_Dtls (Run_Id, Run_Region, Scenario, Feature, Module, Run_Date, Duration, Status, Failure_Cause)  
+VALUES ((Select MAX(Run_id) from Auto_Run_Stat), 'QA', '6 Verify the Product Delete API, whether able to delete product', 'EndtoEnd_E_commerce.feature', 'EcommerceAPI', '2025-05-15', 0, 'PASSED', '')' is successful with number of rows updated: 0
+19:39:21.766 [main] INFO  utilities.MyCustomListener - Global & Input values are cleared before feature started: placeValidations.feature
+19:39:21.795 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+19:39:21.795 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 1 Verify if place being successfully added using AddPlaceAPI 
+----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 1 Verify if place being successfully added using AddPlaceAPI)
+19:39:21.801 [main] INFO  utilities.BaseClass - List of header's: 
+{Accept=*/*, Content-Type=application/json}
+19:39:21.807 [main] INFO  utilities.BaseClass - List of query param's: 
+{key=qaclick123}
+19:39:21.812 [main] INFO  utilities.BaseClass -     "lat": {$latitude},
+19:39:21.813 [main] INFO  utilities.BaseClass -     "lng": {$longitude}
+19:39:21.813 [main] INFO  utilities.BaseClass -   "name": "{$name}",
+19:39:21.813 [main] INFO  utilities.BaseClass -   "address": "{$address}",
+19:39:21.813 [main] INFO  utilities.BaseClass -     "{$side layout}"
+19:39:21.814 [main] INFO  utilities.BaseClass -   "language": "{$language}"
+19:39:21.814 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/add/json
+19:39:21.962 [main] INFO  utilities.BaseClass - Rest Request: 
+{
+  "location": {
+    "lat": -31.388192,
+    "lng": 37.589062
+  },
+  "accuracy": 50,
+  "name": "atest",
+  "phone_number": "(+91) 983 893 3937",
+  "address": "Maratahalli, Bangalore",
+  "types": [
+    "shoe park",
+    "shop"
+  ],
+  "website": "http://google.com",
+  "language": "India-IND"
+}
+
+19:39:21.975 [main] INFO  utilities.BaseClass - Response code: 200
+19:39:21.979 [main] INFO  utilities.BaseClass - Response: {
+    "status": "OK",
+    "place_id": "ef53bc6ccb9367d663b0399536595bff",
+    "scope": "APP",
+    "reference": "be83cc1cff954b25aa40d437cad8cef1be83cc1cff954b25aa40d437cad8cef1",
+    "id": "be83cc1cff954b25aa40d437cad8cef1"
+}
+19:39:22.085 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 1 Verify if place being successfully added using AddPlaceAPI 
+----------------------------------------------------------------------
+19:39:22.085 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+19:39:22.086 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:0, Result:PASSED, Feature:placeValidations.feature, StartTime:2025-05-15T19:39:21.781+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+19:39:22.108 [main] ERROR factory.DBConnection - Error in connecting to the database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+19:39:22.108 [main] INFO  factory.DBConnection - Execution of the query: 'INSERT INTO Auto_Run_Dtls (Run_Id, Run_Region, Scenario, Feature, Module, Run_Date, Duration, Status, Failure_Cause)  
+VALUES ((Select MAX(Run_id) from Auto_Run_Stat), 'QA', '1 Verify if place being successfully added using AddPlaceAPI', 'placeValidations.feature', 'GoogleAPI', '2025-05-15', 0, 'PASSED', '')' is successful with number of rows updated: 0
+19:39:22.151 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+19:39:22.151 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 2 Verify if place details fetching successfully by GetPlaceAPI 
+----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 2 Verify if place details fetching successfully by GetPlaceAPI)
+19:39:22.162 [main] INFO  utilities.BaseClass - List of query param's: 
+{key=qaclick123, place_id=ef53bc6ccb9367d663b0399536595bff}
+19:39:22.169 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/get/json
+19:39:23.485 [main] INFO  utilities.BaseClass - Response code: 200
+19:39:23.487 [main] INFO  utilities.BaseClass - Response: {
+    "location": {
+        "latitude": "-31.388192",
+        "longitude": "37.589062"
+    },
+    "accuracy": "50",
+    "name": "atest",
+    "phone_number": "(+91) 983 893 3937",
+    "address": "Maratahalli, Bangalore",
+    "types": "shoe park,shop",
+    "website": "http://google.com",
+    "language": "India-IND"
+}
+19:39:23.542 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 2 Verify if place details fetching successfully by GetPlaceAPI 
+----------------------------------------------------------------------
+19:39:23.542 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+19:39:23.543 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:1, Result:PASSED, Feature:placeValidations.feature, StartTime:2025-05-15T19:39:22.133+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+19:39:23.562 [main] ERROR factory.DBConnection - Error in connecting to the database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+19:39:23.562 [main] INFO  factory.DBConnection - Execution of the query: 'INSERT INTO Auto_Run_Dtls (Run_Id, Run_Region, Scenario, Feature, Module, Run_Date, Duration, Status, Failure_Cause)  
+VALUES ((Select MAX(Run_id) from Auto_Run_Stat), 'QA', '2 Verify if place details fetching successfully by GetPlaceAPI', 'placeValidations.feature', 'GoogleAPI', '2025-05-15', 1, 'PASSED', '')' is successful with number of rows updated: 0
+19:39:23.595 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+19:39:23.596 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 3 Verify if place details fetching successfully by UpdatePlaceAPI 
+----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 3 Verify if place details fetching successfully by UpdatePlaceAPI)
+19:39:23.603 [main] INFO  utilities.BaseClass - List of query param's: 
+{key=qaclick123}
+19:39:23.622 [main] INFO  utilities.BaseClass - "place_id":"{$place_id}",
+19:39:23.622 [main] INFO  utilities.BaseClass - "address":"{$address}",
+19:39:23.623 [main] INFO  utilities.BaseClass - "key":"{$key}"
+19:39:23.623 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/update/json
+19:39:25.583 [main] INFO  utilities.BaseClass - Rest Request: 
+{
+"place_id":"ef53bc6ccb9367d663b0399536595bff",
+"address":"HSR Layout",
+"key":"qaclick123"
+}
+
+19:39:25.588 [main] INFO  utilities.BaseClass - Response code: 200
+19:39:25.588 [main] INFO  utilities.BaseClass - Response: {
+    "msg": "Address successfully updated"
+}
+19:39:25.606 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 3 Verify if place details fetching successfully by UpdatePlaceAPI 
+----------------------------------------------------------------------
+19:39:25.606 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+19:39:25.609 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:2, Result:PASSED, Feature:placeValidations.feature, StartTime:2025-05-15T19:39:23.584+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+19:39:25.633 [main] ERROR factory.DBConnection - Error in connecting to the database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+19:39:25.634 [main] INFO  factory.DBConnection - Execution of the query: 'INSERT INTO Auto_Run_Dtls (Run_Id, Run_Region, Scenario, Feature, Module, Run_Date, Duration, Status, Failure_Cause)  
+VALUES ((Select MAX(Run_id) from Auto_Run_Stat), 'QA', '3 Verify if place details fetching successfully by UpdatePlaceAPI', 'placeValidations.feature', 'GoogleAPI', '2025-05-15', 2, 'PASSED', '')' is successful with number of rows updated: 0
+19:39:25.661 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+19:39:25.662 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 4 Verify if place details fetching successfully by DeletePlaceAPI 
+----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 4 Verify if place details fetching successfully by DeletePlaceAPI)
+19:39:25.670 [main] INFO  utilities.BaseClass - List of query param's: 
+{key=qaclick123}
+19:39:25.675 [main] INFO  utilities.BaseClass -     "place_id":"{$place_id}"
+19:39:25.675 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/delete/json
+19:39:27.738 [main] INFO  utilities.BaseClass - Rest Request: 
+{
+    "place_id":"ef53bc6ccb9367d663b0399536595bff"
+}
+
+19:39:27.750 [main] INFO  utilities.BaseClass - Response code: 200
+19:39:27.751 [main] INFO  utilities.BaseClass - Response: {
+    "status": "OK"
+}
+19:39:27.770 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 4 Verify if place details fetching successfully by DeletePlaceAPI 
+----------------------------------------------------------------------
+19:39:27.770 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+19:39:27.771 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:2, Result:PASSED, Feature:placeValidations.feature, StartTime:2025-05-15T19:39:25.652+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+19:39:27.794 [main] ERROR factory.DBConnection - Error in connecting to the database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+19:39:27.794 [main] INFO  factory.DBConnection - Execution of the query: 'INSERT INTO Auto_Run_Dtls (Run_Id, Run_Region, Scenario, Feature, Module, Run_Date, Duration, Status, Failure_Cause)  
+VALUES ((Select MAX(Run_id) from Auto_Run_Stat), 'QA', '4 Verify if place details fetching successfully by DeletePlaceAPI', 'placeValidations.feature', 'GoogleAPI', '2025-05-15', 2, 'PASSED', '')' is successful with number of rows updated: 0
+19:39:27.811 [main] INFO  stepDefinitions.Hooks - ===================== Run Statistics =====================
+19:39:27.812 [main] INFO  stepDefinitions.Hooks - Automation Suit Completed on QA environment
+19:39:27.815 [main] INFO  utilities.MyCustomListener - Automation Suite Finished at: 2025-05-15 19:39:27
+19:39:27.815 [main] INFO  utilities.MyCustomListener - Run Duration: 0h 0m 15s
+19:39:27.816 [main] INFO  utilities.MyCustomListener - Run status: PASSED
+19:42:57.146 [main] INFO  utilities.MyCustomListener - 
+    _     __  __  _______   ___   ____   ____     _   _______  _   ___   ____    _                 
+   / \   | |  | ||__   __| / _ \ | |\ \ / /| |   / \ |__   __|| | / - \ | |\ \  | |    
+  / _ \  | |  | |   | |   | / \ || |  \_/  | |  / _ \   | |   | || / \ || | \ \ | |     
+ / ___ \ | \__/ |   | |   | \_/ || |       | | / --- \  | |   | || \_/ || |  \ \| |     
+/_/   \_\ \____/    |_|    \___/ |_|       |_|/_/   \_\ |_|   |_| \___/ |_|   \__/     
+--------------------------------------------------------------------------------------------
+19:42:57.170 [main] INFO  utilities.MyCustomListener - Automation Suite Started at: 2025-05-15 19:42:57
+19:42:57.339 [main] INFO  factory.ReadConfigFiles - configuration properties loaded successfully from: E:\IntelliJ_Workspace\RestAssured_Cucumber_SerenityReports//configure.properties
+19:42:57.341 [main] INFO  factory.ReadConfigFiles - API endpoints properties loaded successfully from: E:\IntelliJ_Workspace\RestAssured_Cucumber_SerenityReports//src//test//resources//properties//restAPIDetails.properties
+19:42:57.343 [main] INFO  stepDefinitions.Hooks - Automation Suit Started on QA environment
+19:42:57.356 [main] INFO  utilities.MyCustomListener - Global & Input values are cleared before feature started: placeValidations.feature
+19:42:57.736 [main] INFO  utilities.MyCustomListener - Global & Input values are cleared before feature started: placeValidations.feature
+19:42:58.391 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+19:42:58.392 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 1 Verify if place being successfully added using AddPlaceAPI 
+----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 1 Verify if place being successfully added using AddPlaceAPI)
+19:43:00.643 [main] INFO  utilities.BaseClass - List of header's: 
+{Accept=*/*, Content-Type=application/json}
+19:43:00.696 [main] INFO  utilities.BaseClass - List of query param's: 
+{key=qaclick123}
+19:43:00.713 [main] INFO  utilities.BaseClass -     "lat": {$latitude},
+19:43:00.713 [main] INFO  utilities.BaseClass -     "lng": {$longitude}
+19:43:00.714 [main] INFO  utilities.BaseClass -   "name": "{$name}",
+19:43:00.715 [main] INFO  utilities.BaseClass -   "address": "{$address}",
+19:43:00.715 [main] INFO  utilities.BaseClass -     "{$side layout}"
+19:43:00.715 [main] INFO  utilities.BaseClass -   "language": "{$language}"
+19:43:00.715 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/add/json
+19:43:04.231 [main] INFO  utilities.BaseClass - Rest Request: 
+{
+  "location": {
+    "lat": -31.388192,
+    "lng": 37.589062
+  },
+  "accuracy": 50,
+  "name": "atest",
+  "phone_number": "(+91) 983 893 3937",
+  "address": "Maratahalli, Bangalore",
+  "types": [
+    "shoe park",
+    "shop"
+  ],
+  "website": "http://google.com",
+  "language": "India-IND"
+}
+
+19:43:04.247 [main] INFO  utilities.BaseClass - Response code: 200
+19:43:04.343 [main] INFO  utilities.BaseClass - Response: {
+    "status": "OK",
+    "place_id": "18c9fa95acaebb7dbccb189fe058c948",
+    "scope": "APP",
+    "reference": "b1fac9c439256ebd345ca3bd626b3fdcb1fac9c439256ebd345ca3bd626b3fdc",
+    "id": "b1fac9c439256ebd345ca3bd626b3fdc"
+}
+19:43:05.473 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 1 Verify if place being successfully added using AddPlaceAPI 
+----------------------------------------------------------------------
+19:43:05.473 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+19:43:05.475 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:7, Result:PASSED, Feature:placeValidations.feature, StartTime:2025-05-15T19:42:57.929+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+19:43:06.028 [main] ERROR factory.DBConnection - Error in connecting to the database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+19:43:06.033 [main] INFO  factory.DBConnection - Execution of the query: 'INSERT INTO Auto_Run_Dtls (Run_Id, Run_Region, Scenario, Feature, Module, Run_Date, Duration, Status, Failure_Cause)  
+VALUES ((Select MAX(Run_id) from Auto_Run_Stat), 'QA', '1 Verify if place being successfully added using AddPlaceAPI', 'placeValidations.feature', 'GoogleAPI', '2025-05-15', 7, 'PASSED', '')' is successful with number of rows updated: 0
+19:43:06.135 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+19:43:06.135 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 2 Verify if place details fetching successfully by GetPlaceAPI 
+----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 2 Verify if place details fetching successfully by GetPlaceAPI)
+19:43:06.145 [main] INFO  utilities.BaseClass - List of query param's: 
+{key=qaclick123, place_id=18c9fa95acaebb7dbccb189fe058c948}
+19:43:06.159 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/get/json
+19:43:07.607 [main] INFO  utilities.BaseClass - Response code: 200
+19:43:07.609 [main] INFO  utilities.BaseClass - Response: {
+    "location": {
+        "latitude": "-31.388192",
+        "longitude": "37.589062"
+    },
+    "accuracy": "50",
+    "name": "atest",
+    "phone_number": "(+91) 983 893 3937",
+    "address": "Maratahalli, Bangalore",
+    "types": "shoe park,shop",
+    "website": "http://google.com",
+    "language": "India-IND"
+}
+19:43:07.677 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 2 Verify if place details fetching successfully by GetPlaceAPI 
+----------------------------------------------------------------------
+19:43:07.677 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+19:43:07.678 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:1, Result:PASSED, Feature:placeValidations.feature, StartTime:2025-05-15T19:43:06.113+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+19:43:07.688 [main] ERROR factory.DBConnection - Error in connecting to the database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+19:43:07.688 [main] INFO  factory.DBConnection - Execution of the query: 'INSERT INTO Auto_Run_Dtls (Run_Id, Run_Region, Scenario, Feature, Module, Run_Date, Duration, Status, Failure_Cause)  
+VALUES ((Select MAX(Run_id) from Auto_Run_Stat), 'QA', '2 Verify if place details fetching successfully by GetPlaceAPI', 'placeValidations.feature', 'GoogleAPI', '2025-05-15', 1, 'PASSED', '')' is successful with number of rows updated: 0
+19:43:07.755 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+19:43:07.755 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 3 Verify if place details fetching successfully by UpdatePlaceAPI 
+----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 3 Verify if place details fetching successfully by UpdatePlaceAPI)
+19:43:07.765 [main] INFO  utilities.BaseClass - List of query param's: 
+{key=qaclick123}
+19:43:07.781 [main] INFO  utilities.BaseClass - "place_id":"{$place_id}",
+19:43:07.781 [main] INFO  utilities.BaseClass - "address":"{$address}",
+19:43:07.782 [main] INFO  utilities.BaseClass - "key":"{$key}"
+19:43:07.782 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/update/json
+19:43:09.710 [main] INFO  utilities.BaseClass - Rest Request: 
+{
+"place_id":"18c9fa95acaebb7dbccb189fe058c948",
+"address":"HSR Layout",
+"key":"qaclick123"
+}
+
+19:43:09.718 [main] INFO  utilities.BaseClass - Response code: 200
+19:43:09.719 [main] INFO  utilities.BaseClass - Response: {
+    "msg": "Address successfully updated"
+}
+19:43:09.738 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 3 Verify if place details fetching successfully by UpdatePlaceAPI 
+----------------------------------------------------------------------
+19:43:09.738 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+19:43:09.739 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:2, Result:PASSED, Feature:placeValidations.feature, StartTime:2025-05-15T19:43:07.736+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+19:43:09.749 [main] ERROR factory.DBConnection - Error in connecting to the database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+19:43:09.749 [main] INFO  factory.DBConnection - Execution of the query: 'INSERT INTO Auto_Run_Dtls (Run_Id, Run_Region, Scenario, Feature, Module, Run_Date, Duration, Status, Failure_Cause)  
+VALUES ((Select MAX(Run_id) from Auto_Run_Stat), 'QA', '3 Verify if place details fetching successfully by UpdatePlaceAPI', 'placeValidations.feature', 'GoogleAPI', '2025-05-15', 2, 'PASSED', '')' is successful with number of rows updated: 0
+19:43:09.795 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+19:43:09.795 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 4 Verify if place details fetching successfully by DeletePlaceAPI 
+----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 4 Verify if place details fetching successfully by DeletePlaceAPI)
+19:43:09.802 [main] INFO  utilities.BaseClass - List of query param's: 
+{key=qaclick123}
+19:43:09.811 [main] INFO  utilities.BaseClass -     "place_id":"{$place_id}"
+19:43:09.811 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/delete/json
+19:43:11.696 [main] INFO  utilities.BaseClass - Rest Request: 
+{
+    "place_id":"18c9fa95acaebb7dbccb189fe058c948"
+}
+
+19:43:11.713 [main] INFO  utilities.BaseClass - Response code: 200
+19:43:11.714 [main] INFO  utilities.BaseClass - Response: {
+    "status": "OK"
+}
+19:43:11.735 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 4 Verify if place details fetching successfully by DeletePlaceAPI 
+----------------------------------------------------------------------
+19:43:11.735 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+19:43:11.737 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:1, Result:PASSED, Feature:placeValidations.feature, StartTime:2025-05-15T19:43:09.782+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+19:43:11.750 [main] ERROR factory.DBConnection - Error in connecting to the database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+19:43:11.750 [main] INFO  factory.DBConnection - Execution of the query: 'INSERT INTO Auto_Run_Dtls (Run_Id, Run_Region, Scenario, Feature, Module, Run_Date, Duration, Status, Failure_Cause)  
+VALUES ((Select MAX(Run_id) from Auto_Run_Stat), 'QA', '4 Verify if place details fetching successfully by DeletePlaceAPI', 'placeValidations.feature', 'GoogleAPI', '2025-05-15', 1, 'PASSED', '')' is successful with number of rows updated: 0
+19:43:11.770 [main] INFO  stepDefinitions.Hooks - ===================== Run Statistics =====================
+19:43:11.770 [main] INFO  stepDefinitions.Hooks - Automation Suit Completed on QA environment
+19:43:11.772 [main] INFO  utilities.MyCustomListener - Automation Suite Finished at: 2025-05-15 19:43:11
+19:43:11.772 [main] INFO  utilities.MyCustomListener - Run Duration: 0h 0m 14s
+19:43:11.772 [main] INFO  utilities.MyCustomListener - Run status: PASSED
+19:46:28.652 [main] INFO  utilities.MyCustomListener - 
+    _     __  __  _______   ___   ____   ____     _   _______  _   ___   ____    _                 
+   / \   | |  | ||__   __| / _ \ | |\ \ / /| |   / \ |__   __|| | / - \ | |\ \  | |    
+  / _ \  | |  | |   | |   | / \ || |  \_/  | |  / _ \   | |   | || / \ || | \ \ | |     
+ / ___ \ | \__/ |   | |   | \_/ || |       | | / --- \  | |   | || \_/ || |  \ \| |     
+/_/   \_\ \____/    |_|    \___/ |_|       |_|/_/   \_\ |_|   |_| \___/ |_|   \__/     
+--------------------------------------------------------------------------------------------
+19:46:28.675 [main] INFO  utilities.MyCustomListener - Automation Suite Started at: 2025-05-15 19:46:28
+19:46:28.770 [main] INFO  factory.ReadConfigFiles - configuration properties loaded successfully from: E:\IntelliJ_Workspace\RestAssured_Cucumber_SerenityReports//configure.properties
+19:46:28.771 [main] INFO  factory.ReadConfigFiles - API endpoints properties loaded successfully from: E:\IntelliJ_Workspace\RestAssured_Cucumber_SerenityReports//src//test//resources//properties//restAPIDetails.properties
+19:46:28.771 [main] INFO  stepDefinitions.Hooks - Automation Suit Started on QA environment
+19:46:28.783 [main] INFO  utilities.MyCustomListener - Global & Input values are cleared before feature started: placeValidations.feature
+19:46:29.075 [main] INFO  utilities.MyCustomListener - Global & Input values are cleared before feature started: placeValidations.feature
+19:46:29.853 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+19:46:29.855 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 1 Verify if place being successfully added using AddPlaceAPI 
+----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 1 Verify if place being successfully added using AddPlaceAPI)
+19:46:31.570 [main] INFO  utilities.BaseClass - List of header's: 
+{Accept=*/*, Content-Type=application/json}
+19:46:31.611 [main] INFO  utilities.BaseClass - List of query param's: 
+{key=qaclick123}
+19:46:31.626 [main] INFO  utilities.BaseClass -     "lat": {$latitude},
+19:46:31.626 [main] INFO  utilities.BaseClass -     "lng": {$longitude}
+19:46:31.627 [main] INFO  utilities.BaseClass -   "name": "{$name}",
+19:46:31.627 [main] INFO  utilities.BaseClass -   "address": "{$address}",
+19:46:31.627 [main] INFO  utilities.BaseClass -     "{$side layout}"
+19:46:31.627 [main] INFO  utilities.BaseClass -   "language": "{$language}"
+19:46:31.628 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/add/json
+19:46:33.753 [main] INFO  utilities.BaseClass - Rest Request: 
+{
+  "location": {
+    "lat": -31.388192,
+    "lng": 37.589062
+  },
+  "accuracy": 50,
+  "name": "atest",
+  "phone_number": "(+91) 983 893 3937",
+  "address": "Maratahalli, Bangalore",
+  "types": [
+    "shoe park",
+    "shop"
+  ],
+  "website": "http://google.com",
+  "language": "India-IND"
+}
+
+19:46:33.768 [main] INFO  utilities.BaseClass - Response code: 200
+19:46:33.869 [main] INFO  utilities.BaseClass - Response: {
+    "status": "OK",
+    "place_id": "98655644c82d92f308d264875639c541",
+    "scope": "APP",
+    "reference": "1249d86a60ecd922a7bfe061343945a51249d86a60ecd922a7bfe061343945a5",
+    "id": "1249d86a60ecd922a7bfe061343945a5"
+}
+19:46:35.082 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 1 Verify if place being successfully added using AddPlaceAPI 
+----------------------------------------------------------------------
+19:46:35.082 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+19:46:35.087 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:5, Result:PASSED, Feature:placeValidations.feature, StartTime:2025-05-15T19:46:29.206+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+19:46:35.399 [main] ERROR factory.DBConnection - Error in connecting to the database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+19:46:35.404 [main] INFO  factory.DBConnection - Execution of the query: 'INSERT INTO Auto_Run_Dtls (Run_Id, Run_Region, Scenario, Feature, Module, Run_Date, Duration, Status, Failure_Cause)  
+VALUES ((Select MAX(Run_id) from Auto_Run_Stat), 'QA', '1 Verify if place being successfully added using AddPlaceAPI', 'placeValidations.feature', 'GoogleAPI', '2025-05-15', 5, 'PASSED', '')' is successful with number of rows updated: 0
+19:46:35.499 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+19:46:35.499 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 2 Verify if place details fetching successfully by GetPlaceAPI 
+----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 2 Verify if place details fetching successfully by GetPlaceAPI)
+19:46:35.510 [main] INFO  utilities.BaseClass - List of query param's: 
+{key=qaclick123, place_id=98655644c82d92f308d264875639c541}
+19:46:35.521 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/get/json
+19:46:36.905 [main] INFO  utilities.BaseClass - Response code: 200
+19:46:36.908 [main] INFO  utilities.BaseClass - Response: {
+    "location": {
+        "latitude": "-31.388192",
+        "longitude": "37.589062"
+    },
+    "accuracy": "50",
+    "name": "atest",
+    "phone_number": "(+91) 983 893 3937",
+    "address": "Maratahalli, Bangalore",
+    "types": "shoe park,shop",
+    "website": "http://google.com",
+    "language": "India-IND"
+}
+19:46:36.966 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 2 Verify if place details fetching successfully by GetPlaceAPI 
+----------------------------------------------------------------------
+19:46:36.966 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+19:46:36.967 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:1, Result:PASSED, Feature:placeValidations.feature, StartTime:2025-05-15T19:46:35.483+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+19:46:36.979 [main] ERROR factory.DBConnection - Error in connecting to the database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+19:46:36.979 [main] INFO  factory.DBConnection - Execution of the query: 'INSERT INTO Auto_Run_Dtls (Run_Id, Run_Region, Scenario, Feature, Module, Run_Date, Duration, Status, Failure_Cause)  
+VALUES ((Select MAX(Run_id) from Auto_Run_Stat), 'QA', '2 Verify if place details fetching successfully by GetPlaceAPI', 'placeValidations.feature', 'GoogleAPI', '2025-05-15', 1, 'PASSED', '')' is successful with number of rows updated: 0
+19:46:37.042 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+19:46:37.043 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 3 Verify if place details fetching successfully by UpdatePlaceAPI 
+----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 3 Verify if place details fetching successfully by UpdatePlaceAPI)
+19:46:37.052 [main] INFO  utilities.BaseClass - List of query param's: 
+{key=qaclick123}
+19:46:37.062 [main] INFO  utilities.BaseClass - "place_id":"{$place_id}",
+19:46:37.062 [main] INFO  utilities.BaseClass - "address":"{$address}",
+19:46:37.062 [main] INFO  utilities.BaseClass - "key":"{$key}"
+19:46:37.062 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/update/json
+19:46:39.020 [main] INFO  utilities.BaseClass - Rest Request: 
+{
+"place_id":"98655644c82d92f308d264875639c541",
+"address":"HSR Layout",
+"key":"qaclick123"
+}
+
+19:46:39.028 [main] INFO  utilities.BaseClass - Response code: 200
+19:46:39.029 [main] INFO  utilities.BaseClass - Response: {
+    "msg": "Address successfully updated"
+}
+19:46:39.048 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 3 Verify if place details fetching successfully by UpdatePlaceAPI 
+----------------------------------------------------------------------
+19:46:39.048 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+19:46:39.049 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:2, Result:PASSED, Feature:placeValidations.feature, StartTime:2025-05-15T19:46:37.010+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+19:46:39.058 [main] ERROR factory.DBConnection - Error in connecting to the database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+19:46:39.059 [main] INFO  factory.DBConnection - Execution of the query: 'INSERT INTO Auto_Run_Dtls (Run_Id, Run_Region, Scenario, Feature, Module, Run_Date, Duration, Status, Failure_Cause)  
+VALUES ((Select MAX(Run_id) from Auto_Run_Stat), 'QA', '3 Verify if place details fetching successfully by UpdatePlaceAPI', 'placeValidations.feature', 'GoogleAPI', '2025-05-15', 2, 'PASSED', '')' is successful with number of rows updated: 0
+19:46:39.104 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+19:46:39.104 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 4 Verify if place details fetching successfully by DeletePlaceAPI 
+----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 4 Verify if place details fetching successfully by DeletePlaceAPI)
+19:46:39.112 [main] INFO  utilities.BaseClass - List of query param's: 
+{key=qaclick123}
+19:46:39.120 [main] INFO  utilities.BaseClass -     "place_id":"{$place_id}"
+19:46:39.121 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/delete/json
+19:46:41.152 [main] INFO  utilities.BaseClass - Rest Request: 
+{
+    "place_id":"98655644c82d92f308d264875639c541"
+}
+
+19:46:41.160 [main] INFO  utilities.BaseClass - Response code: 200
+19:46:41.161 [main] INFO  utilities.BaseClass - Response: {
+    "status": "OK"
+}
+19:46:41.181 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 4 Verify if place details fetching successfully by DeletePlaceAPI 
+----------------------------------------------------------------------
+19:46:41.181 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+19:46:41.182 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:2, Result:PASSED, Feature:placeValidations.feature, StartTime:2025-05-15T19:46:39.086+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+19:46:41.192 [main] ERROR factory.DBConnection - Error in connecting to the database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+19:46:41.192 [main] INFO  factory.DBConnection - Execution of the query: 'INSERT INTO Auto_Run_Dtls (Run_Id, Run_Region, Scenario, Feature, Module, Run_Date, Duration, Status, Failure_Cause)  
+VALUES ((Select MAX(Run_id) from Auto_Run_Stat), 'QA', '4 Verify if place details fetching successfully by DeletePlaceAPI', 'placeValidations.feature', 'GoogleAPI', '2025-05-15', 2, 'PASSED', '')' is successful with number of rows updated: 0
+19:46:41.206 [main] INFO  stepDefinitions.Hooks - ===================== Run Statistics =====================
+19:46:41.206 [main] INFO  stepDefinitions.Hooks - Automation Suit Completed on QA environment
+19:46:41.208 [main] INFO  utilities.MyCustomListener - Automation Suite Finished at: 2025-05-15 19:46:41
+19:46:41.208 [main] INFO  utilities.MyCustomListener - Run Duration: 0h 0m 12s
+19:46:41.209 [main] INFO  utilities.MyCustomListener - Run status: PASSED
+21:10:13.504 [main] INFO  utilities.MyCustomListener - 
+    _     __  __  _______   ___   ____   ____     _   _______  _   ___   ____    _                 
+   / \   | |  | ||__   __| / _ \ | |\ \ / /| |   / \ |__   __|| | / - \ | |\ \  | |    
+  / _ \  | |  | |   | |   | / \ || |  \_/  | |  / _ \   | |   | || / \ || | \ \ | |     
+ / ___ \ | \__/ |   | |   | \_/ || |       | | / --- \  | |   | || \_/ || |  \ \| |     
+/_/   \_\ \____/    |_|    \___/ |_|       |_|/_/   \_\ |_|   |_| \___/ |_|   \__/     
+--------------------------------------------------------------------------------------------
+21:10:13.537 [main] INFO  utilities.MyCustomListener - Automation Suite Started at: 2025-05-15 21:10:13
+21:10:13.664 [main] INFO  factory.ReadConfigFiles - configuration properties loaded successfully from: E:\IntelliJ_Workspace\RestAssured_Cucumber_SerenityReports//configure.properties
+21:10:13.665 [main] INFO  factory.ReadConfigFiles - API endpoints properties loaded successfully from: E:\IntelliJ_Workspace\RestAssured_Cucumber_SerenityReports//src//test//resources//properties//restAPIDetails.properties
+21:10:13.665 [main] INFO  stepDefinitions.Hooks - Automation Suit Started on QA environment
+21:10:13.680 [main] INFO  utilities.MyCustomListener - Global & Input values are cleared before feature started: placeValidations.feature
+21:10:14.122 [main] INFO  utilities.MyCustomListener - Global & Input values are cleared before feature started: placeValidations.feature
+21:10:14.666 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+21:10:14.667 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 1 Verify if place being successfully added using AddPlaceAPI 
+----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 1 Verify if place being successfully added using AddPlaceAPI)
+21:10:15.692 [main] INFO  utilities.BaseClass - List of header's: 
+{Accept=*/*, Content-Type=application/json}
+21:10:15.727 [main] INFO  utilities.BaseClass - List of query param's: 
+{key=qaclick123}
+21:10:15.738 [main] INFO  utilities.BaseClass -     "lat": {$latitude},
+21:10:15.739 [main] INFO  utilities.BaseClass -     "lng": {$longitude}
+21:10:15.739 [main] INFO  utilities.BaseClass -   "name": "{$name}",
+21:10:15.739 [main] INFO  utilities.BaseClass -   "address": "{$address}",
+21:10:15.739 [main] INFO  utilities.BaseClass -     "{$side layout}"
+21:10:15.739 [main] INFO  utilities.BaseClass -   "language": "{$language}"
+21:10:15.740 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/add/json
+21:10:18.339 [main] INFO  utilities.BaseClass - Rest Request: 
+{
+  "location": {
+    "lat": -31.388192,
+    "lng": 37.589062
+  },
+  "accuracy": 50,
+  "name": "atest",
+  "phone_number": "(+91) 983 893 3937",
+  "address": "Maratahalli, Bangalore",
+  "types": [
+    "shoe park",
+    "shop"
+  ],
+  "website": "http://google.com",
+  "language": "India-IND"
+}
+
+21:10:18.357 [main] INFO  utilities.BaseClass - Response code: 200
+21:10:18.459 [main] INFO  utilities.BaseClass - Response: {
+    "status": "OK",
+    "place_id": "c1cdb000664a5c25da92a2df193caf89",
+    "scope": "APP",
+    "reference": "77ecdb28456b94583ffceb8f8451999977ecdb28456b94583ffceb8f84519999",
+    "id": "77ecdb28456b94583ffceb8f84519999"
+}
+21:10:19.613 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 1 Verify if place being successfully added using AddPlaceAPI 
+----------------------------------------------------------------------
+21:10:19.613 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+21:10:19.615 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:5, Result:PASSED, Feature:placeValidations.feature, StartTime:2025-05-15T21:10:14.281+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+21:10:20.016 [main] ERROR factory.DBConnection - Error in connecting to the database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+21:10:20.022 [main] INFO  factory.DBConnection - Execution of the query: 'INSERT INTO Auto_Run_Dtls (Run_Id, Run_Region, Scenario, Feature, Module, Run_Date, Duration, Status, Failure_Cause)  
+VALUES ((Select MAX(Run_id) from Auto_Run_Stat), 'QA', '1 Verify if place being successfully added using AddPlaceAPI', 'placeValidations.feature', 'GoogleAPI', '2025-05-15', 5, 'PASSED', '')' is successful with number of rows updated: 0
+21:10:20.091 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+21:10:20.091 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 2 Verify if place details fetching successfully by GetPlaceAPI 
+----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 2 Verify if place details fetching successfully by GetPlaceAPI)
+21:10:20.101 [main] INFO  utilities.BaseClass - List of query param's: 
+{key=qaclick123, place_id=c1cdb000664a5c25da92a2df193caf89}
+21:10:20.111 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/get/json
+21:10:21.508 [main] INFO  utilities.BaseClass - Response code: 200
+21:10:21.514 [main] INFO  utilities.BaseClass - Response: {
+    "location": {
+        "latitude": "-31.388192",
+        "longitude": "37.589062"
+    },
+    "accuracy": "50",
+    "name": "atest",
+    "phone_number": "(+91) 983 893 3937",
+    "address": "Maratahalli, Bangalore",
+    "types": "shoe park,shop",
+    "website": "http://google.com",
+    "language": "India-IND"
+}
+21:10:21.616 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 2 Verify if place details fetching successfully by GetPlaceAPI 
+----------------------------------------------------------------------
+21:10:21.617 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+21:10:21.618 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:1, Result:PASSED, Feature:placeValidations.feature, StartTime:2025-05-15T21:10:20.075+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+21:10:21.628 [main] ERROR factory.DBConnection - Error in connecting to the database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+21:10:21.628 [main] INFO  factory.DBConnection - Execution of the query: 'INSERT INTO Auto_Run_Dtls (Run_Id, Run_Region, Scenario, Feature, Module, Run_Date, Duration, Status, Failure_Cause)  
+VALUES ((Select MAX(Run_id) from Auto_Run_Stat), 'QA', '2 Verify if place details fetching successfully by GetPlaceAPI', 'placeValidations.feature', 'GoogleAPI', '2025-05-15', 1, 'PASSED', '')' is successful with number of rows updated: 0
+21:10:21.676 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+21:10:21.676 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 3 Verify if place details fetching successfully by UpdatePlaceAPI 
+----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 3 Verify if place details fetching successfully by UpdatePlaceAPI)
+21:10:21.687 [main] INFO  utilities.BaseClass - List of query param's: 
+{key=qaclick123}
+21:10:21.696 [main] INFO  utilities.BaseClass - "place_id":"{$place_id}",
+21:10:21.696 [main] INFO  utilities.BaseClass - "address":"{$address}",
+21:10:21.696 [main] INFO  utilities.BaseClass - "key":"{$key}"
+21:10:21.696 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/update/json
+21:10:23.629 [main] INFO  utilities.BaseClass - Rest Request: 
+{
+"place_id":"c1cdb000664a5c25da92a2df193caf89",
+"address":"HSR Layout",
+"key":"qaclick123"
+}
+
+21:10:23.651 [main] INFO  utilities.BaseClass - Response code: 200
+21:10:23.653 [main] INFO  utilities.BaseClass - Response: {
+    "msg": "Address successfully updated"
+}
+21:10:23.676 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 3 Verify if place details fetching successfully by UpdatePlaceAPI 
+----------------------------------------------------------------------
+21:10:23.676 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+21:10:23.677 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:2, Result:PASSED, Feature:placeValidations.feature, StartTime:2025-05-15T21:10:21.661+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+21:10:23.686 [main] ERROR factory.DBConnection - Error in connecting to the database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+21:10:23.687 [main] INFO  factory.DBConnection - Execution of the query: 'INSERT INTO Auto_Run_Dtls (Run_Id, Run_Region, Scenario, Feature, Module, Run_Date, Duration, Status, Failure_Cause)  
+VALUES ((Select MAX(Run_id) from Auto_Run_Stat), 'QA', '3 Verify if place details fetching successfully by UpdatePlaceAPI', 'placeValidations.feature', 'GoogleAPI', '2025-05-15', 2, 'PASSED', '')' is successful with number of rows updated: 0
+21:10:23.766 [main] INFO  stepDefinitions.Hooks - Entered before scenario
+21:10:23.767 [main] INFO  utilities.MyCustomListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+
+TEST STARTED: 4 Verify if place details fetching successfully by DeletePlaceAPI 
+----------------------------------------------------------------------(src/test/resources/features/GoogleAPI/placeValidations.feature; 4 Verify if place details fetching successfully by DeletePlaceAPI)
+21:10:23.773 [main] INFO  utilities.BaseClass - List of query param's: 
+{key=qaclick123}
+21:10:23.783 [main] INFO  utilities.BaseClass -     "place_id":"{$place_id}"
+21:10:23.783 [main] INFO  utilities.BaseClass - RestAPI url: https://rahulshettyacademy.com/maps/api/place/delete/json
+21:10:27.229 [main] INFO  utilities.BaseClass - Rest Request: 
+{
+    "place_id":"c1cdb000664a5c25da92a2df193caf89"
+}
+
+21:10:27.273 [main] INFO  utilities.BaseClass - Response code: 200
+21:10:27.275 [main] INFO  utilities.BaseClass - Response: {
+    "status": "OK"
+}
+21:10:27.299 [main] INFO  utilities.MyCustomListener - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: 4 Verify if place details fetching successfully by DeletePlaceAPI 
+----------------------------------------------------------------------
+21:10:27.299 [main] INFO  stepDefinitions.Hooks - Entered after scenario
+21:10:27.299 [main] INFO  utilities.MyCustomListener - Test finished outcome:: Duration:3, Result:PASSED, Feature:placeValidations.feature, StartTime:2025-05-15T21:10:23.747+05:30[Asia/Calcutta], TestFailedStep:0, TestFailedStepLine:null, FailureCause:null
+21:10:27.309 [main] ERROR factory.DBConnection - Error in connecting to the database: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+21:10:27.309 [main] INFO  factory.DBConnection - Execution of the query: 'INSERT INTO Auto_Run_Dtls (Run_Id, Run_Region, Scenario, Feature, Module, Run_Date, Duration, Status, Failure_Cause)  
+VALUES ((Select MAX(Run_id) from Auto_Run_Stat), 'QA', '4 Verify if place details fetching successfully by DeletePlaceAPI', 'placeValidations.feature', 'GoogleAPI', '2025-05-15', 3, 'PASSED', '')' is successful with number of rows updated: 0
+21:10:27.324 [main] INFO  stepDefinitions.Hooks - ===================== Run Statistics =====================
+21:10:27.324 [main] INFO  stepDefinitions.Hooks - Automation Suit Completed on QA environment
+21:10:27.325 [main] INFO  utilities.MyCustomListener - Automation Suite Finished at: 2025-05-15 21:10:27
+21:10:27.325 [main] INFO  utilities.MyCustomListener - Run Duration: 0h 0m 13s
+21:10:27.325 [main] INFO  utilities.MyCustomListener - Run status: PASSED

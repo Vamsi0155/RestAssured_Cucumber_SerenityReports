@@ -43,12 +43,6 @@
       <artifactId>cucumber-junit</artifactId>
       <version>${cucumber.version}</version>
     </dependency>
-    <dependency>
-      <groupId>io.cucumber</groupId>
-      <artifactId>cucumber-junit-platform-engine</artifactId>
-      <version>${cucumber.version}</version>
-    </dependency>
-
 
     <!-- RestAssured dependencies -->
     <dependency>
@@ -120,6 +114,9 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>3.2.3</version>
+          <configuration>
+            <skip>true</skip>
+          </configuration>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
